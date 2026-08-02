@@ -142,3 +142,42 @@ def lists(request: Request) -> list[ListInfo]:
         return _list_infos(conn)
     finally:
         conn.close()
+
+
+@router.get(
+    "/entity/{source_list}/{reference_number}",
+    summary="Full source record for one listed entity",
+    description="The complete raw record as ingested from the source list, plus "
+    "every searchable name row — for analyst drill-down on a match.",
+)
+def entity_detail(request: Request, source_list: str, reference_number: str) -> dict:
+    conn = request.app.state.audit_conn_factory()
+    try:
+        row = conn.execute(
+            "SELECT * FROM entities WHERE source_list = ? AND reference_number = ?",
+            (source_list.upper(), reference_number),
+        ).fetchone()
+        if row is None:
+            raise HTTPException(status_code=404, detail="entity not found")
+        names = conn.execute(
+            "SELECT name_type, alias_quality, name_original FROM names"
+            " WHERE entity_id = ? ORDER BY name_type != 'primary', name_original",
+            (row["id"],),
+        ).fetchall()
+    finally:
+        conn.close()
+    import json as _json
+
+    return {
+        "source_list": row["source_list"],
+        "reference_number": row["reference_number"],
+        "primary_name": row["primary_name"],
+        "entity_type": row["entity_type"],
+        "nationality": row["nationality"],
+        "date_of_birth": row["date_of_birth"],
+        "listed_date": row["listed_date"],
+        "first_seen_at": row["first_seen_at"],
+        "last_updated_at": row["last_updated_at"],
+        "names": [dict(n) for n in names],
+        "raw_record": _json.loads(row["raw_record"]),
+    }

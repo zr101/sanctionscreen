@@ -141,6 +141,14 @@ class TestHealthAndLists:
             assert info["entity_count"] == expected[info["source_list"]]
             assert info["name_count"] >= info["entity_count"]
 
+    def test_entity_detail(self, api):
+        client, _ = api
+        body = client.get("/entity/OFAC/12345").json()
+        assert body["primary_name"] == "TESTOV, Ivan Petrovich"
+        assert body["raw_record"]["remarks"]
+        assert any(n["name_type"] == "primary" for n in body["names"])
+        assert client.get("/entity/OFAC/nope").status_code == 404
+
     def test_openapi_descriptions(self, api):
         client, _ = api
         spec = client.get("/openapi.json").json()
