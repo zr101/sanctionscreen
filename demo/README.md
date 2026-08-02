@@ -3,15 +3,19 @@ title: SanctionScreen
 emoji: 🛡️
 colorFrom: blue
 colorTo: indigo
-sdk: streamlit
-sdk_version: "1.60.0"
-app_file: app.py
+sdk: docker
+app_port: 8501
 pinned: false
 license: mit
 short_description: Explainable KYC name screening vs DFAT, UN & OFAC lists
 ---
 
 # SanctionScreen — live demo
+
+Runs on Streamlit Community Cloud (main file `demo/app.py`, deps from the
+repo-root `requirements.txt`); the databases download at boot from the public
+HF dataset [zaeemr/sanctionscreen-data](https://huggingface.co/datasets/zaeemr/sanctionscreen-data).
+The frontmatter above also makes this folder deployable as an HF Docker Space.
 
 Layered, explainable KYC name screening against the **DFAT Consolidated
 List**, the **UN Security Council Consolidated List** and the **US OFAC SDN

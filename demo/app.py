@@ -9,14 +9,19 @@ with the Space; the engine builds its in-memory index once per process.
 from __future__ import annotations
 
 import json
+import shutil
+from pathlib import Path
 
 import pandas as pd
 import streamlit as st
+from huggingface_hub import hf_hub_download
 
 from sanctionscreen.config import Settings
 from sanctionscreen.db import connect
 from sanctionscreen.matching.embedding import create_embedder
 from sanctionscreen.matching.engine import MatchingEngine
+
+DATA_REPO = "zaeemr/sanctionscreen-data"
 
 EXAMPLES = [
     "Usama bin Ladin",
@@ -29,8 +34,20 @@ EXAMPLES = [
 st.set_page_config(page_title="SanctionScreen", page_icon="🛡️", layout="wide")
 
 
-@st.cache_resource(show_spinner="Loading matching index and embedding model…")
+def ensure_data() -> None:
+    """Fetch the databases from the public HF dataset when not shipped locally
+    (Streamlit Community Cloud clones only the git repo, which excludes them)."""
+    for filename in ("sanctions.db", "embeddings.db"):
+        target = Path("data") / filename
+        if not target.exists():
+            target.parent.mkdir(parents=True, exist_ok=True)
+            cached = hf_hub_download(DATA_REPO, filename, repo_type="dataset")
+            shutil.copyfile(cached, target)
+
+
+@st.cache_resource(show_spinner="Downloading sanctions data and loading the model…")
 def load_engine() -> tuple[MatchingEngine, str]:
+    ensure_data()
     settings = Settings()
     conn = connect(settings.database.path)
     embedder = create_embedder(settings)
