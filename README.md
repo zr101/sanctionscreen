@@ -12,9 +12,8 @@ returns ranked, *explainable* matches with a full audit trail.
 type *Vladimr Putin*, *Lavrov Sergei* or *Владимир Путин* and expand a
 match to see the layer-by-layer scoring.
 
-Built as a portfolio project for AML/financial-crime and data roles: every
-reporting entity under Australia's AML/CTF Act must screen customers against
-the DFAT Consolidated List, and the interesting part of that problem is not
+Banks and other regulated businesses must check the people they deal with
+against official sanctions lists. The interesting part of that check is not
 the lookup — it's the names.
 
 ## The problem: names don't match themselves
@@ -231,8 +230,8 @@ the threshold and accept more review workload.
   the EU, UK OFSI and other lists as required.
 - **Alias quality is not weighted.** DFAT "Weak" aliases score the same as
   "Strong" ones; a production system would discount weak aliases.
-- **This is a portfolio/demonstration project.** It is not legal advice, not
-  an AUSTRAC-endorsed tool, and not a substitute for a commercial screening
+- **This is a demonstration project.** It is not legal advice, not an
+  endorsed compliance tool, and not a substitute for a commercial screening
   product with vendor SLAs, list QA and tuning support.
 
 ---

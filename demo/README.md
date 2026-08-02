@@ -32,5 +32,5 @@ per-layer sub-scores, so you can see *why* a name matched. Try:
 Source, benchmarks and threshold-tuning guide:
 **[github.com/zr101/sanctionscreen](https://github.com/zr101/sanctionscreen)**
 
-*Portfolio/demonstration software — not legal advice, not a substitute for a
+*Demonstration software — not legal advice, not a substitute for a
 commercial screening product.*

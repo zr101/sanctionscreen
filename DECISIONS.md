@@ -1,7 +1,7 @@
 # DECISIONS
 
-Defaults chosen without asking, per the project brief ("ask me nothing unless genuinely
-blocked"). Each entry records what was decided, why, and what the alternative was.
+Design decisions made during the build. Each entry records what was decided,
+why, and what the alternative was.
 
 ## D1 — Python 3.12, managed by uv
 The system Python is 3.14, which is ahead of reliable wheel coverage for the

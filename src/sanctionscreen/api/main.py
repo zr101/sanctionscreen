@@ -37,7 +37,7 @@ multilingual sentence embeddings — and every result carries per-layer
 sub-scores so an analyst can see *why* a name matched. Every screening call
 is persisted to an audit table under its screening_id.
 
-**Disclaimer**: portfolio/demonstration software, not legal advice and not a
+**Disclaimer**: demonstration software, not legal advice and not a
 substitute for a commercial screening product.
 """
 
