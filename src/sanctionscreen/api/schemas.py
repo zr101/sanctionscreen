@@ -77,9 +77,7 @@ class MatchedEntity(BaseModel):
 class Match(BaseModel):
     matched_name: str = Field(description="The exact list name (or alias) that matched.")
     matched_name_normalised: str
-    matched_name_type: str = Field(
-        description="primary, alias, aka, fka, nka or original_script."
-    )
+    matched_name_type: str = Field(description="primary, alias, aka, fka, nka or original_script.")
     alias_quality: str | None = Field(
         description="Source-assigned alias strength (DFAT Strong/Weak, UN Good/Low)."
     )
@@ -112,8 +110,7 @@ class ListInfo(BaseModel):
         description="UTC timestamp of the most recent successful ingestion run."
     )
     last_status: str | None = Field(
-        description="Outcome of the most recent ingestion run: success, "
-        "fallback_cache or failed."
+        description="Outcome of the most recent ingestion run: success, fallback_cache or failed."
     )
 
 

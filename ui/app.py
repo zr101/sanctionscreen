@@ -152,8 +152,7 @@ if name.strip():
                 st.markdown("**Raw list record**")
                 try:
                     detail = httpx.get(
-                        f"{API_URL}/entity/{entity['source_list']}"
-                        f"/{entity['reference_number']}",
+                        f"{API_URL}/entity/{entity['source_list']}/{entity['reference_number']}",
                         timeout=10,
                     ).json()
                     st.json(detail, expanded=False)

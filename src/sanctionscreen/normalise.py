@@ -13,13 +13,47 @@ import unicodedata
 from collections.abc import Iterable, Sequence
 
 DEFAULT_HONORIFICS: tuple[str, ...] = (
-    "mr", "mrs", "ms", "miss", "dr", "prof", "sir", "lord", "lady",
-    "haji", "hajji", "hadji", "al hajj", "al haj", "alhaj", "el hajj",
-    "mullah", "mulla", "maulavi", "maulawi", "mawlawi", "moulavi",
-    "sheikh", "shaykh", "sheik", "shaikh", "sayyid", "sayed", "syed",
-    "imam", "ustad", "qari", "hafiz",
-    "general", "colonel", "major", "captain", "lieutenant", "brigadier",
-    "eng", "engineer",
+    "mr",
+    "mrs",
+    "ms",
+    "miss",
+    "dr",
+    "prof",
+    "sir",
+    "lord",
+    "lady",
+    "haji",
+    "hajji",
+    "hadji",
+    "al hajj",
+    "al haj",
+    "alhaj",
+    "el hajj",
+    "mullah",
+    "mulla",
+    "maulavi",
+    "maulawi",
+    "mawlawi",
+    "moulavi",
+    "sheikh",
+    "shaykh",
+    "sheik",
+    "shaikh",
+    "sayyid",
+    "sayed",
+    "syed",
+    "imam",
+    "ustad",
+    "qari",
+    "hafiz",
+    "general",
+    "colonel",
+    "major",
+    "captain",
+    "lieutenant",
+    "brigadier",
+    "eng",
+    "engineer",
 )
 
 # Anything that is not a letter, digit or whitespace becomes a space. \w with
@@ -58,9 +92,7 @@ def strip_leading_honorifics(
     return " ".join(tokens) if tokens else normalised
 
 
-def normalise_variants(
-    name: str, honorifics: Sequence[str] = DEFAULT_HONORIFICS
-) -> list[str]:
+def normalise_variants(name: str, honorifics: Sequence[str] = DEFAULT_HONORIFICS) -> list[str]:
     """Normalised forms to index for a name: canonical first, then the
     honorific-stripped variant when it differs."""
     base = normalise_name(name)

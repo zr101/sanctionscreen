@@ -8,8 +8,7 @@ class TestDb:
     def test_schema_bootstrap(self, tmp_path):
         conn = connect(tmp_path / "test.db")
         tables = {
-            row["name"]
-            for row in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")
+            row["name"] for row in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")
         }
         assert {"entities", "names", "ingestion_log", "screenings"} <= tables
         conn.close()

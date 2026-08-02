@@ -37,44 +37,129 @@ POSITIVE_TARGET = {
 NEGATIVE_TARGET = 100
 
 TRANSLITERATION_RULES: list[tuple[str, str]] = [
-    ("mohammed", "muhammad"), ("mohammed", "mohamed"), ("muhammad", "mohammed"),
-    ("hussein", "husain"), ("hussein", "hussain"), ("abdul", "abdool"),
-    ("rahman", "rahmaan"), ("ahmed", "ahmad"), ("ahmad", "ahmed"),
-    ("aziz", "azeez"), ("hakim", "hakeem"), ("rashid", "rasheed"),
-    ("shaikh", "sheikh"), ("usama", "osama"), ("osama", "usama"),
-    ("yusuf", "yousef"), ("yousef", "yusuf"), ("ibrahim", "ebrahim"),
-    ("khalil", "khaleel"), ("jamal", "jamaal"), ("said", "sayid"),
-    ("ali", "aly"), ("hasan", "hassan"), ("hassan", "hasan"),
-    ("qasim", "kasim"), ("tariq", "tarek"), ("walid", "waleed"),
-    ("sergei", "sergey"), ("aleksandr", "alexander"), ("viktor", "victor"),
-    ("dmitri", "dmitriy"), ("yuri", "yury"), ("vladimir", "wladimir"),
-    ("oleg", "olegh"), ("kim", "gim"),
-    ("ou", "u"), ("oo", "u"), ("ee", "i"),
+    ("mohammed", "muhammad"),
+    ("mohammed", "mohamed"),
+    ("muhammad", "mohammed"),
+    ("hussein", "husain"),
+    ("hussein", "hussain"),
+    ("abdul", "abdool"),
+    ("rahman", "rahmaan"),
+    ("ahmed", "ahmad"),
+    ("ahmad", "ahmed"),
+    ("aziz", "azeez"),
+    ("hakim", "hakeem"),
+    ("rashid", "rasheed"),
+    ("shaikh", "sheikh"),
+    ("usama", "osama"),
+    ("osama", "usama"),
+    ("yusuf", "yousef"),
+    ("yousef", "yusuf"),
+    ("ibrahim", "ebrahim"),
+    ("khalil", "khaleel"),
+    ("jamal", "jamaal"),
+    ("said", "sayid"),
+    ("ali", "aly"),
+    ("hasan", "hassan"),
+    ("hassan", "hasan"),
+    ("qasim", "kasim"),
+    ("tariq", "tarek"),
+    ("walid", "waleed"),
+    ("sergei", "sergey"),
+    ("aleksandr", "alexander"),
+    ("viktor", "victor"),
+    ("dmitri", "dmitriy"),
+    ("yuri", "yury"),
+    ("vladimir", "wladimir"),
+    ("oleg", "olegh"),
+    ("kim", "gim"),
+    ("ou", "u"),
+    ("oo", "u"),
+    ("ee", "i"),
 ]
 
 NICKNAMES: dict[str, str] = {
-    "mohammed": "mohd", "muhammad": "mohd", "abdul": "abd",
-    "vladimir": "vova", "alexander": "sasha", "aleksandr": "sasha",
-    "mikhail": "misha", "sergei": "seryoga", "nikolai": "kolya",
-    "dmitri": "dima", "dmitry": "dima", "ivan": "vanya", "viktor": "vitya",
-    "yevgeny": "zhenya", "evgeny": "zhenya", "konstantin": "kostya",
-    "william": "bill", "robert": "bob", "richard": "dick",
-    "ibrahim": "ibro", "ismail": "isma", "abdullah": "abdu",
+    "mohammed": "mohd",
+    "muhammad": "mohd",
+    "abdul": "abd",
+    "vladimir": "vova",
+    "alexander": "sasha",
+    "aleksandr": "sasha",
+    "mikhail": "misha",
+    "sergei": "seryoga",
+    "nikolai": "kolya",
+    "dmitri": "dima",
+    "dmitry": "dima",
+    "ivan": "vanya",
+    "viktor": "vitya",
+    "yevgeny": "zhenya",
+    "evgeny": "zhenya",
+    "konstantin": "kostya",
+    "william": "bill",
+    "robert": "bob",
+    "richard": "dick",
+    "ibrahim": "ibro",
+    "ismail": "isma",
+    "abdullah": "abdu",
 }
 
 NEGATIVE_FIRST = [
-    "Bronwyn", "Lachlan", "Matilda", "Angus", "Imogen", "Declan", "Sienna",
-    "Callum", "Freya", "Hamish", "Isla", "Rory", "Tahlia", "Ewan", "Greta",
-    "Quentin", "Marigold", "Barnaby", "Clementine", "Digby", "Prudence",
-    "Alistair", "Rosalind", "Fergus", "Winifred", "Horace", "Beatrix",
-    "Cedric", "Gwendolyn", "Rupert",
+    "Bronwyn",
+    "Lachlan",
+    "Matilda",
+    "Angus",
+    "Imogen",
+    "Declan",
+    "Sienna",
+    "Callum",
+    "Freya",
+    "Hamish",
+    "Isla",
+    "Rory",
+    "Tahlia",
+    "Ewan",
+    "Greta",
+    "Quentin",
+    "Marigold",
+    "Barnaby",
+    "Clementine",
+    "Digby",
+    "Prudence",
+    "Alistair",
+    "Rosalind",
+    "Fergus",
+    "Winifred",
+    "Horace",
+    "Beatrix",
+    "Cedric",
+    "Gwendolyn",
+    "Rupert",
 ]
 NEGATIVE_LAST = [
-    "Fairweather", "Thistlewood", "Brightwater", "Copperfield", "Dunstable",
-    "Everingham", "Featherstone", "Greenhalgh", "Honeybourne", "Inglewood",
-    "Kingsley-Smith", "Larkspur", "Merriweather", "Netherwood", "Oakhurst",
-    "Pemberton", "Quigley", "Ravenscroft", "Silverthorne", "Tunbridge",
-    "Underhill", "Waverley", "Wetherby", "Yarrow", "Ashcombe",
+    "Fairweather",
+    "Thistlewood",
+    "Brightwater",
+    "Copperfield",
+    "Dunstable",
+    "Everingham",
+    "Featherstone",
+    "Greenhalgh",
+    "Honeybourne",
+    "Inglewood",
+    "Kingsley-Smith",
+    "Larkspur",
+    "Merriweather",
+    "Netherwood",
+    "Oakhurst",
+    "Pemberton",
+    "Quigley",
+    "Ravenscroft",
+    "Silverthorne",
+    "Tunbridge",
+    "Underhill",
+    "Waverley",
+    "Wetherby",
+    "Yarrow",
+    "Ashcombe",
 ]
 
 
@@ -117,9 +202,7 @@ def entity_norms(conn) -> dict[tuple[str, str], set[str]]:
 
 
 def perturb_transliteration(rng: random.Random, cand: dict) -> str | None:
-    applicable = [
-        (src, dst) for src, dst in TRANSLITERATION_RULES if src in cand["norm"]
-    ]
+    applicable = [(src, dst) for src, dst in TRANSLITERATION_RULES if src in cand["norm"]]
     if not applicable:
         return None
     src, dst = rng.choice(applicable)
@@ -184,10 +267,10 @@ def perturb_spacing_hyphen(rng: random.Random, cand: dict) -> str | None:
     i = rng.randrange(len(tokens) - 1)
     style = rng.choice(["merge", "hyphen", "split"])
     if style == "merge":
-        merged = [*tokens[:i], tokens[i] + tokens[i + 1], *tokens[i + 2:]]
+        merged = [*tokens[:i], tokens[i] + tokens[i + 1], *tokens[i + 2 :]]
         return " ".join(merged)
     if style == "hyphen":
-        merged = [*tokens[:i], tokens[i] + "-" + tokens[i + 1], *tokens[i + 2:]]
+        merged = [*tokens[:i], tokens[i] + "-" + tokens[i + 1], *tokens[i + 2 :]]
         return " ".join(merged)
     token = tokens[i] if len(tokens[i]) >= 6 else tokens[-1]
     if len(token) < 6:
@@ -277,9 +360,7 @@ def main() -> None:
 
     out = root / "eval" / "fixtures" / "testset.json"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(
-        json.dumps({"seed": SEED, "cases": cases}, indent=1, ensure_ascii=False) + "\n"
-    )
+    out.write_text(json.dumps({"seed": SEED, "cases": cases}, indent=1, ensure_ascii=False) + "\n")
     by_type: dict[str, int] = {}
     for case in cases:
         by_type[case["perturbation"]] = by_type.get(case["perturbation"], 0) + 1

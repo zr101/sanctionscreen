@@ -87,9 +87,7 @@ class TestScreen:
         assert client.post("/screen", json={"name": ""}).status_code == 422
         assert client.post("/screen", json={"name": "x", "threshold": 101}).status_code == 422
         assert client.post("/screen", json={"name": "x", "max_results": 0}).status_code == 422
-        assert (
-            client.post("/screen", json={"name": "x", "entity_type": "robot"}).status_code == 422
-        )
+        assert client.post("/screen", json={"name": "x", "entity_type": "robot"}).status_code == 422
 
     def test_whitespace_only_name_rejected(self, api):
         client, _ = api

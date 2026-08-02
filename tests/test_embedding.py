@@ -95,8 +95,7 @@ class TestEmbeddingLayer:
         sims = embedder.query("عبد الرحيم تستمان")
         top_ids = [name_id for name_id, _ in sims.top(limit=10, cutoff=0.2)]
         names = {
-            r["id"]: r["name_original"]
-            for r in conn.execute("SELECT id, name_original FROM names")
+            r["id"]: r["name_original"] for r in conn.execute("SELECT id, name_original FROM names")
         }
         matched = [names[i] for i in top_ids if i in names]
         assert any("تستمان" in m or "Testman" in m for m in matched)

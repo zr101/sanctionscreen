@@ -41,9 +41,7 @@ class OfacSource(BaseModel):
     sdn_url: str = "https://sanctionslistservice.ofac.treas.gov/api/download/sdn.csv"
     alt_url: str = "https://sanctionslistservice.ofac.treas.gov/api/download/alt.csv"
     add_url: str = "https://sanctionslistservice.ofac.treas.gov/api/download/add.csv"
-    comments_url: str = (
-        "https://sanctionslistservice.ofac.treas.gov/api/download/sdn_comments.csv"
-    )
+    comments_url: str = "https://sanctionslistservice.ofac.treas.gov/api/download/sdn_comments.csv"
 
 
 class SourcesConfig(BaseModel):

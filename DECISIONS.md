@@ -60,3 +60,15 @@ full row is preserved in `raw_record` for audit.
 "Haji"/"Mullah" etc. are honorifics in some names and genuine name parts in others.
 Normalisation strips them only from the front of a name, and when stripping changes
 the string the index keeps both the stripped and unstripped normalised forms.
+
+## D10 — `metaphone` package, not jellyfish
+The brief allowed either; jellyfish only implements original Metaphone, while
+the `metaphone` package provides true Double Metaphone (primary + secondary
+codes). Non-Latin tokens yield no code and fall back to the raw token so
+original-script names stay phonetically indexable.
+
+## D11 — Docker bakes the model and vectors into the API image
+Refinement of D6: at image build time the HF model is downloaded and all name
+vectors precomputed, so containers start in seconds and run fully offline
+(`HF_HUB_OFFLINE=1`). `--build-arg WITH_EMBEDDINGS=0` produces a lite image
+(layers 1–3 only) at roughly a tenth of the size.

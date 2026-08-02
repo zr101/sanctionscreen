@@ -31,15 +31,11 @@ class TestPhonetic:
 
 class TestFuzzy:
     def test_order_swap_scores_high(self):
-        score = fuzzy_score(
-            "ali hassan", "hassan ali", token_sort_weight=0.7, partial_weight=0.3
-        )
+        score = fuzzy_score("ali hassan", "hassan ali", token_sort_weight=0.7, partial_weight=0.3)
         assert score > 90
 
     def test_substring_downweighted(self):
-        score = fuzzy_score(
-            "ali", "ali baba trading co", token_sort_weight=0.7, partial_weight=0.3
-        )
+        score = fuzzy_score("ali", "ali baba trading co", token_sort_weight=0.7, partial_weight=0.3)
         assert score < 60  # partial_ratio alone would be 100
 
 

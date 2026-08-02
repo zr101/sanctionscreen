@@ -26,8 +26,18 @@ _DOB_RE = re.compile(r"DOB[:\s]+([^;]+)", re.IGNORECASE)
 _NATIONALITY_RE = re.compile(r"nationality[:\s]+([^;]+)", re.IGNORECASE)
 
 _SDN_COLUMNS = (
-    "ent_num", "sdn_name", "sdn_type", "program", "title", "call_sign",
-    "vess_type", "tonnage", "grt", "vess_flag", "vess_owner", "remarks",
+    "ent_num",
+    "sdn_name",
+    "sdn_type",
+    "program",
+    "title",
+    "call_sign",
+    "vess_type",
+    "tonnage",
+    "grt",
+    "vess_flag",
+    "vess_owner",
+    "remarks",
 )
 
 _ALT_TYPES = {"aka": "aka", "fka": "fka", "nka": "nka"}

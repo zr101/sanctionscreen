@@ -90,9 +90,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--offline", action="store_true", help="use cached copies, no network access"
     )
-    parser.add_argument(
-        "--no-embed", action="store_true", help="skip embedding precomputation"
-    )
+    parser.add_argument("--no-embed", action="store_true", help="skip embedding precomputation")
     args = parser.parse_args(argv)
 
     settings = get_settings()

@@ -26,8 +26,11 @@ class LayerScores:
     embedding: float = 0.0
 
     def fired(self) -> list[str]:
-        return [name for name in ("exact", "phonetic", "fuzzy", "embedding")
-                if getattr(self, name) > 0.0]
+        return [
+            name
+            for name in ("exact", "phonetic", "fuzzy", "embedding")
+            if getattr(self, name) > 0.0
+        ]
 
 
 @dataclass

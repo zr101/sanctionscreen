@@ -94,8 +94,7 @@ def main() -> int:
         recall = tp / (tp + fn) if tp + fn else 0.0
         f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
         lines.append(
-            f"| {threshold} | {precision:.3f} | {recall:.3f} | {f1:.3f}"
-            f" | {tp} | {fp} | {fn} |"
+            f"| {threshold} | {precision:.3f} | {recall:.3f} | {f1:.3f} | {tp} | {fp} | {fn} |"
         )
 
     lines.append("\n### Recall by perturbation type (threshold 75)\n")
@@ -115,9 +114,7 @@ def main() -> int:
         by_type.setdefault(case["perturbation"], []).append(hit)
     for perturbation in sorted(by_type):
         hits = by_type[perturbation]
-        lines.append(
-            f"| {perturbation} | {len(hits)} | {sum(hits) / len(hits):.3f} |"
-        )
+        lines.append(f"| {perturbation} | {len(hits)} | {sum(hits) / len(hits):.3f} |")
 
     p50 = statistics.median(latencies)
     p95 = statistics.quantiles(latencies, n=20)[18]
