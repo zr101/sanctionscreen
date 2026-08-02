@@ -1,0 +1,2705 @@
+{
+ "seed": 42,
+ "cases": [
+  {
+   "case_id": "P001",
+   "query": "valyakhmetov vadym firdavysovych",
+   "perturbation": "transliteration",
+   "original_name": "VALIAKHMETOV, Vadym Firdavysovych",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "44908"
+   }
+  },
+  {
+   "case_id": "P002",
+   "query": "levin dmitriy oleghovich",
+   "perturbation": "transliteration",
+   "original_name": "LEVIN, Dmitriy Olegovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "36380"
+   }
+  },
+  {
+   "case_id": "P003",
+   "query": "tolchinskiy dmitriy m",
+   "perturbation": "transliteration",
+   "original_name": "TOLCHINSKIY, Dmitri M.",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15896"
+   }
+  },
+  {
+   "case_id": "P004",
+   "query": "olegh logunov",
+   "perturbation": "transliteration",
+   "original_name": "Oleg LOGUNOV",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6839"
+   }
+  },
+  {
+   "case_id": "P005",
+   "query": "abdul salam hanafi aly mardan qul",
+   "perturbation": "transliteration",
+   "original_name": "ABDUL SALAM HANAFI ALI MARDAN QUL",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "TAi.027"
+   }
+  },
+  {
+   "case_id": "P006",
+   "query": "naway haji aly",
+   "perturbation": "transliteration",
+   "original_name": "NAWAY, Haji Ali",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "9754"
+   }
+  },
+  {
+   "case_id": "P007",
+   "query": "mikhail kiziv",
+   "perturbation": "transliteration",
+   "original_name": "Mikhail Kizeev",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6577"
+   }
+  },
+  {
+   "case_id": "P008",
+   "query": "harb khaleel yusif",
+   "perturbation": "transliteration",
+   "original_name": "HARB, Khalil Yusif",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15515"
+   }
+  },
+  {
+   "case_id": "P009",
+   "query": "salym majdi muhammad muhammad",
+   "perturbation": "transliteration",
+   "original_name": "SALIM, Majdi Muhammad Muhammad",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "33288"
+   }
+  },
+  {
+   "case_id": "P010",
+   "query": "oksana alexanderovna tchigrina",
+   "perturbation": "transliteration",
+   "original_name": "Oksana Aleksandrovna TCHIGRINA",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7648"
+   }
+  },
+  {
+   "case_id": "P011",
+   "query": "nessim ben romdhane sahraui",
+   "perturbation": "transliteration",
+   "original_name": "Nessim Ben Romdhane Sahraoui",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "579"
+   }
+  },
+  {
+   "case_id": "P012",
+   "query": "abd al latif bin abdallah salyh muhammad al kawari",
+   "perturbation": "transliteration",
+   "original_name": "ABD AL-LATIF BIN ABDALLAH SALIH MUHAMMAD AL-KAWARI",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "QDi.380"
+   }
+  },
+  {
+   "case_id": "P013",
+   "query": "sergey surovikin",
+   "perturbation": "transliteration",
+   "original_name": "Sergei SUROVIKIN",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6721"
+   }
+  },
+  {
+   "case_id": "P014",
+   "query": "amir muhammad sa id abdal rahmaan al salbi",
+   "perturbation": "transliteration",
+   "original_name": "Amir Muhammad Sa'id Abdal-Rahman al-Salbi",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6245"
+   }
+  },
+  {
+   "case_id": "P015",
+   "query": "solozhentseva natalya vladimirovna",
+   "perturbation": "transliteration",
+   "original_name": "SOLOZHENTSEVA, Natalia Vladimirovna",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "45913"
+   }
+  },
+  {
+   "case_id": "P016",
+   "query": "slewa rudi",
+   "perturbation": "transliteration",
+   "original_name": "SLEWA, Roodi",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "8231"
+   }
+  },
+  {
+   "case_id": "P017",
+   "query": "aly abdul karim ali",
+   "perturbation": "transliteration",
+   "original_name": "Ali ABDUL KARIM ALI",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "2299"
+   }
+  },
+  {
+   "case_id": "P018",
+   "query": "asil muthana",
+   "perturbation": "transliteration",
+   "original_name": "ASEEL MUTHANA",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "QDi.357"
+   }
+  },
+  {
+   "case_id": "P019",
+   "query": "al barnawi khalyd",
+   "perturbation": "transliteration",
+   "original_name": "AL-BARNAWI, Khalid",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15011"
+   }
+  },
+  {
+   "case_id": "P020",
+   "query": "nazarikolehjub hossein",
+   "perturbation": "transliteration",
+   "original_name": "NAZARIKOLEHJOUB, Hossein",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "29839"
+   }
+  },
+  {
+   "case_id": "P021",
+   "query": "gim kwang chun",
+   "perturbation": "transliteration",
+   "original_name": "Kim Kwang Chun",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "3077"
+   }
+  },
+  {
+   "case_id": "P022",
+   "query": "kachanov olegh yurevich",
+   "perturbation": "transliteration",
+   "original_name": "KACHANOV, Oleg Yurevich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "46058"
+   }
+  },
+  {
+   "case_id": "P023",
+   "query": "ameen al peshawari fazeel a tul shaykh abu mohamed",
+   "perturbation": "transliteration",
+   "original_name": "AMEEN AL-PESHAWARI, Fazeel-A-Tul Shaykh Abu Mohammed",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "11355"
+   }
+  },
+  {
+   "case_id": "P024",
+   "query": "al rawi umar talyb zughayr",
+   "perturbation": "transliteration",
+   "original_name": "AL-RAWI, Umar Talib Zughayr",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "26697"
+   }
+  },
+  {
+   "case_id": "P025",
+   "query": "karelova galyna nikolayevna",
+   "perturbation": "transliteration",
+   "original_name": "KARELOVA, Galina Nikolayevna",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "36805"
+   }
+  },
+  {
+   "case_id": "P026",
+   "query": "mahdavian aly",
+   "perturbation": "transliteration",
+   "original_name": "MAHDAVIAN, Ali",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "50555"
+   }
+  },
+  {
+   "case_id": "P027",
+   "query": "al muhaysini abdallah mohammed bin sulayman",
+   "perturbation": "transliteration",
+   "original_name": "AL-MUHAYSINI, 'Abdallah Muhammad Bin-Sulayman",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "20880"
+   }
+  },
+  {
+   "case_id": "P028",
+   "query": "furcand herve",
+   "perturbation": "transliteration",
+   "original_name": "FOURCAND, Herve",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "39639"
+   }
+  },
+  {
+   "case_id": "P029",
+   "query": "muhammad sholeh ebrahim",
+   "perturbation": "transliteration",
+   "original_name": "MUHAMMAD SHOLEH IBRAHIM",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "QDi.395"
+   }
+  },
+  {
+   "case_id": "P030",
+   "query": "gim pyong chan",
+   "perturbation": "transliteration",
+   "original_name": "KIM, Pyong Chan",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "23507"
+   }
+  },
+  {
+   "case_id": "P031",
+   "query": "abdelkarim hussain mohamed al nasser",
+   "perturbation": "transliteration",
+   "original_name": "Abdelkarim Hussein Mohamed AL-NASSER",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "185"
+   }
+  },
+  {
+   "case_id": "P032",
+   "query": "al juburi maysar aly musa abdallah",
+   "perturbation": "transliteration",
+   "original_name": "AL-JUBURI, Maysar Ali Musa Abdallah",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15590"
+   }
+  },
+  {
+   "case_id": "P033",
+   "query": "nazirullah hanafi walyullah",
+   "perturbation": "transliteration",
+   "original_name": "Nazirullah Hanafi Waliullah",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "129"
+   }
+  },
+  {
+   "case_id": "P034",
+   "query": "bashar sabawi ebrahim hasan al tikriti",
+   "perturbation": "transliteration",
+   "original_name": "BASHAR SABAWI IBRAHIM HASAN AL-TIKRITI",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "733"
+   }
+  },
+  {
+   "case_id": "P035",
+   "query": "mohammad tahir hammid hussain",
+   "perturbation": "transliteration",
+   "original_name": "MOHAMMAD TAHIR HAMMID HUSSEIN",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "QDi.144"
+   }
+  },
+  {
+   "case_id": "P036",
+   "query": "mikheychik wladimir vladimirovich",
+   "perturbation": "transliteration",
+   "original_name": "MIKHEYCHIK, Vladimir Vladimirovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "47173"
+   }
+  },
+  {
+   "case_id": "P037",
+   "query": "al marfadi khalyd",
+   "perturbation": "transliteration",
+   "original_name": "AL-MARFADI, Khalid",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "23049"
+   }
+  },
+  {
+   "case_id": "P038",
+   "query": "noor waly mehsud",
+   "perturbation": "transliteration",
+   "original_name": "NOOR WALI MEHSUD",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6247"
+   }
+  },
+  {
+   "case_id": "P039",
+   "query": "silayev yevgeniy wladimirovich",
+   "perturbation": "transliteration",
+   "original_name": "SILAYEV, Yevgeniy Vladimirovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "58077"
+   }
+  },
+  {
+   "case_id": "P040",
+   "query": "ustinov wladimir vasilyevich",
+   "perturbation": "transliteration",
+   "original_name": "USTINOV, Vladimir Vasilyevich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "24143"
+   }
+  },
+  {
+   "case_id": "P041",
+   "query": "sergey nikolaeyvich dubinpskiy",
+   "perturbation": "typo",
+   "original_name": "Sergey Nikolayevich DUBINSKIY",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7559"
+   }
+  },
+  {
+   "case_id": "P042",
+   "query": "adem ylimaz",
+   "perturbation": "typo",
+   "original_name": "ADEM YILMAZ",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "1101"
+   }
+  },
+  {
+   "case_id": "P043",
+   "query": "febriwansnah tuah",
+   "perturbation": "typo",
+   "original_name": "FEBRIWANSYAH, Tuah",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "18620"
+   }
+  },
+  {
+   "case_id": "P044",
+   "query": "valiakhmetov vadym firdavysovycn",
+   "perturbation": "typo",
+   "original_name": "VALIAKHMETOV, Vadym Firdavysovych",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "44908"
+   }
+  },
+  {
+   "case_id": "P045",
+   "query": "du iaxin",
+   "perturbation": "typo",
+   "original_name": "DU, Jiaxin",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "49763"
+   }
+  },
+  {
+   "case_id": "P046",
+   "query": "hmaida nabagwgala",
+   "perturbation": "typo",
+   "original_name": "Hamida Nabaggala",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "8792"
+   }
+  },
+  {
+   "case_id": "P047",
+   "query": "tolchinkiy dmitri m",
+   "perturbation": "typo",
+   "original_name": "TOLCHINSKIY, Dmitri M.",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15896"
+   }
+  },
+  {
+   "case_id": "P048",
+   "query": "vuassiliades giorgos",
+   "perturbation": "typo",
+   "original_name": "VASSILIADES, Giorgos",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "42067"
+   }
+  },
+  {
+   "case_id": "P049",
+   "query": "germain katnga",
+   "perturbation": "typo",
+   "original_name": "GERMAIN KATANGA",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "CDi.006"
+   }
+  },
+  {
+   "case_id": "P050",
+   "query": "oleg logunvo",
+   "perturbation": "typo",
+   "original_name": "Oleg LOGUNOV",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6839"
+   }
+  },
+  {
+   "case_id": "P051",
+   "query": "arshhba otary ionovic",
+   "perturbation": "typo",
+   "original_name": "ARSHBA, Otary Ionovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "37299"
+   }
+  },
+  {
+   "case_id": "P052",
+   "query": "abdvl salam hanafi ali mardan qul",
+   "perturbation": "typo",
+   "original_name": "ABDUL SALAM HANAFI ALI MARDAN QUL",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "TAi.027"
+   }
+  },
+  {
+   "case_id": "P053",
+   "query": "a ini huasyr",
+   "perturbation": "typo",
+   "original_name": "A'INI, Husayn",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "44025"
+   }
+  },
+  {
+   "case_id": "P054",
+   "query": "min byog chol",
+   "perturbation": "typo",
+   "original_name": "MIN BYONG CHOL",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "KPi.047"
+   }
+  },
+  {
+   "case_id": "P055",
+   "query": "nawaqy haji ali",
+   "perturbation": "typo",
+   "original_name": "NAWAY, Haji Ali",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "9754"
+   }
+  },
+  {
+   "case_id": "P056",
+   "query": "al nakhalaxh izyad",
+   "perturbation": "typo",
+   "original_name": "AL-NAKHALAH, Ziyad",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "16503"
+   }
+  },
+  {
+   "case_id": "P057",
+   "query": "tvdic dusan",
+   "perturbation": "typo",
+   "original_name": "TADIC, Dusan",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "7803"
+   }
+  },
+  {
+   "case_id": "P058",
+   "query": "rahi jahanbkhsh",
+   "perturbation": "typo",
+   "original_name": "Rahim JAHANBAKHSH",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "8580"
+   }
+  },
+  {
+   "case_id": "P059",
+   "query": "mihkaial kizeev",
+   "perturbation": "typo",
+   "original_name": "Mikhail Kizeev",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6577"
+   }
+  },
+  {
+   "case_id": "P060",
+   "query": "borzs yuryevich titov",
+   "perturbation": "typo",
+   "original_name": "Boris Yuryevich TITOV",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7437"
+   }
+  },
+  {
+   "case_id": "P061",
+   "query": "harb khlail xyusif",
+   "perturbation": "typo",
+   "original_name": "HARB, Khalil Yusif",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15515"
+   }
+  },
+  {
+   "case_id": "P062",
+   "query": "salim ajdi muhammad muhammad",
+   "perturbation": "typo",
+   "original_name": "SALIM, Majdi Muhammad Muhammad",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "33288"
+   }
+  },
+  {
+   "case_id": "P063",
+   "query": "ni aobin",
+   "perturbation": "typo",
+   "original_name": "NI, Gaobin",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "47818"
+   }
+  },
+  {
+   "case_id": "P064",
+   "query": "kogan alexander brisovich",
+   "perturbation": "typo",
+   "original_name": "KOGAN, Alexander Borisovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "35645"
+   }
+  },
+  {
+   "case_id": "P065",
+   "query": "oksnaa aleksandrovn tchigrina",
+   "perturbation": "typo",
+   "original_name": "Oksana Aleksandrovna TCHIGRINA",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7648"
+   }
+  },
+  {
+   "case_id": "P066",
+   "query": "vladisyav alexandrovich tretiak",
+   "perturbation": "typo",
+   "original_name": "Vladislav Alexandrovich TRETIAK",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7195"
+   }
+  },
+  {
+   "case_id": "P067",
+   "query": "llanos ngazia jorge luis",
+   "perturbation": "typo",
+   "original_name": "LLANOS GAZIA, Jorge Luis",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "12296"
+   }
+  },
+  {
+   "case_id": "P068",
+   "query": "rabilero aguilera eugevio armando",
+   "perturbation": "typo",
+   "original_name": "RABILERO AGUILERA, Eugenio Armando",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "57731"
+   }
+  },
+  {
+   "case_id": "P069",
+   "query": "necssim ben romdhane sahraoui",
+   "perturbation": "typo",
+   "original_name": "Nessim Ben Romdhane Sahraoui",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "579"
+   }
+  },
+  {
+   "case_id": "P070",
+   "query": "kolcbin sergey nikolayevich",
+   "perturbation": "typo",
+   "original_name": "KOLBIN, Sergey Nikolayevich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "36821"
+   }
+  },
+  {
+   "case_id": "P071",
+   "query": "ad al latif bin abdallah salih muhammad al kawari",
+   "perturbation": "typo",
+   "original_name": "ABD AL-LATIF BIN ABDALLAH SALIH MUHAMMAD AL-KAWARI",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "QDi.380"
+   }
+  },
+  {
+   "case_id": "P072",
+   "query": "sergei sarovikin",
+   "perturbation": "typo",
+   "original_name": "Sergei SUROVIKIN",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6721"
+   }
+  },
+  {
+   "case_id": "P073",
+   "query": "perez salws nestor isidro",
+   "perturbation": "typo",
+   "original_name": "PEREZ SALAS, Nestor Isidro",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "43476"
+   }
+  },
+  {
+   "case_id": "P074",
+   "query": "ndrmqi ylli badri",
+   "perturbation": "typo",
+   "original_name": "NDROQI, Ylli Bahri",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "35961"
+   }
+  },
+  {
+   "case_id": "P075",
+   "query": "amir muhammad sa id abdal rahman al stalbpi",
+   "perturbation": "typo",
+   "original_name": "Amir Muhammad Sa'id Abdal-Rahman al-Salbi",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6245"
+   }
+  },
+  {
+   "case_id": "P076",
+   "query": "qasem vsoleimani",
+   "perturbation": "typo",
+   "original_name": "QASEM SOLEIMANI",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "8490"
+   }
+  },
+  {
+   "case_id": "P077",
+   "query": "rahmatulla kakazada",
+   "perturbation": "typo",
+   "original_name": "Rahmatullah Kakazada",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "137"
+   }
+  },
+  {
+   "case_id": "P078",
+   "query": "solozhentseva natalia vladiimrovna",
+   "perturbation": "typo",
+   "original_name": "SOLOZHENTSEVA, Natalia Vladimirovna",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "45913"
+   }
+  },
+  {
+   "case_id": "P079",
+   "query": "kpurov artem",
+   "perturbation": "typo",
+   "original_name": "KUROV, Artem",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "44909"
+   }
+  },
+  {
+   "case_id": "P080",
+   "query": "rozitsn nikolai",
+   "perturbation": "typo",
+   "original_name": "KOZITSYN, Nikolai",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "17241"
+   }
+  },
+  {
+   "case_id": "P081",
+   "query": "dubinskiy sergey nikolayevich",
+   "perturbation": "order_swap",
+   "original_name": "Sergey Nikolayevich DUBINSKIY",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7559"
+   }
+  },
+  {
+   "case_id": "P082",
+   "query": "yilmaz adem",
+   "perturbation": "order_swap",
+   "original_name": "ADEM YILMAZ",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "1101"
+   }
+  },
+  {
+   "case_id": "P083",
+   "query": "tuah febriwansyah",
+   "perturbation": "order_swap",
+   "original_name": "FEBRIWANSYAH, Tuah",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "18620"
+   }
+  },
+  {
+   "case_id": "P084",
+   "query": "firdavysovych vadym valiakhmetov",
+   "perturbation": "order_swap",
+   "original_name": "VALIAKHMETOV, Vadym Firdavysovych",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "44908"
+   }
+  },
+  {
+   "case_id": "P085",
+   "query": "jiaxin du",
+   "perturbation": "order_swap",
+   "original_name": "DU, Jiaxin",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "49763"
+   }
+  },
+  {
+   "case_id": "P086",
+   "query": "olegovich dmitriy levin",
+   "perturbation": "order_swap",
+   "original_name": "LEVIN, Dmitriy Olegovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "36380"
+   }
+  },
+  {
+   "case_id": "P087",
+   "query": "nabaggala hamida",
+   "perturbation": "order_swap",
+   "original_name": "Hamida Nabaggala",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "8792"
+   }
+  },
+  {
+   "case_id": "P088",
+   "query": "tolchinskiy m dmitri",
+   "perturbation": "order_swap",
+   "original_name": "TOLCHINSKIY, Dmitri M.",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15896"
+   }
+  },
+  {
+   "case_id": "P089",
+   "query": "giorgos vassiliades",
+   "perturbation": "order_swap",
+   "original_name": "VASSILIADES, Giorgos",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "42067"
+   }
+  },
+  {
+   "case_id": "P090",
+   "query": "katanga germain",
+   "perturbation": "order_swap",
+   "original_name": "GERMAIN KATANGA",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "CDi.006"
+   }
+  },
+  {
+   "case_id": "P091",
+   "query": "logunov oleg",
+   "perturbation": "order_swap",
+   "original_name": "Oleg LOGUNOV",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6839"
+   }
+  },
+  {
+   "case_id": "P092",
+   "query": "otary arshba ionovich",
+   "perturbation": "order_swap",
+   "original_name": "ARSHBA, Otary Ionovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "37299"
+   }
+  },
+  {
+   "case_id": "P093",
+   "query": "mardan hanafi qul abdul ali salam",
+   "perturbation": "order_swap",
+   "original_name": "ABDUL SALAM HANAFI ALI MARDAN QUL",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "TAi.027"
+   }
+  },
+  {
+   "case_id": "P094",
+   "query": "husayn ini a",
+   "perturbation": "order_swap",
+   "original_name": "A'INI, Husayn",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "44025"
+   }
+  },
+  {
+   "case_id": "P095",
+   "query": "chol byong min",
+   "perturbation": "order_swap",
+   "original_name": "MIN BYONG CHOL",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "KPi.047"
+   }
+  },
+  {
+   "case_id": "P096",
+   "query": "haji naway ali",
+   "perturbation": "order_swap",
+   "original_name": "NAWAY, Haji Ali",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "9754"
+   }
+  },
+  {
+   "case_id": "P097",
+   "query": "nakhalah ziyad al",
+   "perturbation": "order_swap",
+   "original_name": "AL-NAKHALAH, Ziyad",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "16503"
+   }
+  },
+  {
+   "case_id": "P098",
+   "query": "dusan tadic",
+   "perturbation": "order_swap",
+   "original_name": "TADIC, Dusan",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "7803"
+   }
+  },
+  {
+   "case_id": "P099",
+   "query": "jahanbakhsh rahim",
+   "perturbation": "order_swap",
+   "original_name": "Rahim JAHANBAKHSH",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "8580"
+   }
+  },
+  {
+   "case_id": "P100",
+   "query": "kizeev mikhail",
+   "perturbation": "order_swap",
+   "original_name": "Mikhail Kizeev",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6577"
+   }
+  },
+  {
+   "case_id": "P101",
+   "query": "titov boris yuryevich",
+   "perturbation": "order_swap",
+   "original_name": "Boris Yuryevich TITOV",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7437"
+   }
+  },
+  {
+   "case_id": "P102",
+   "query": "yusif khalil harb",
+   "perturbation": "order_swap",
+   "original_name": "HARB, Khalil Yusif",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15515"
+   }
+  },
+  {
+   "case_id": "P103",
+   "query": "muhammad salim majdi muhammad",
+   "perturbation": "order_swap",
+   "original_name": "SALIM, Majdi Muhammad Muhammad",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "33288"
+   }
+  },
+  {
+   "case_id": "P104",
+   "query": "gaobin ni",
+   "perturbation": "order_swap",
+   "original_name": "NI, Gaobin",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "47818"
+   }
+  },
+  {
+   "case_id": "P105",
+   "query": "alexander kogan borisovich",
+   "perturbation": "order_swap",
+   "original_name": "KOGAN, Alexander Borisovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "35645"
+   }
+  },
+  {
+   "case_id": "P106",
+   "query": "tchigrina aleksandrovna oksana",
+   "perturbation": "order_swap",
+   "original_name": "Oksana Aleksandrovna TCHIGRINA",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7648"
+   }
+  },
+  {
+   "case_id": "P107",
+   "query": "alexandrovich tretiak vladislav",
+   "perturbation": "order_swap",
+   "original_name": "Vladislav Alexandrovich TRETIAK",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7195"
+   }
+  },
+  {
+   "case_id": "P108",
+   "query": "llanos luis gazia jorge",
+   "perturbation": "order_swap",
+   "original_name": "LLANOS GAZIA, Jorge Luis",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "12296"
+   }
+  },
+  {
+   "case_id": "P109",
+   "query": "aguilera eugenio rabilero armando",
+   "perturbation": "order_swap",
+   "original_name": "RABILERO AGUILERA, Eugenio Armando",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "57731"
+   }
+  },
+  {
+   "case_id": "P110",
+   "query": "sahraoui ben nessim romdhane",
+   "perturbation": "order_swap",
+   "original_name": "Nessim Ben Romdhane Sahraoui",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "579"
+   }
+  },
+  {
+   "case_id": "P111",
+   "query": "sergey dubinskiy",
+   "perturbation": "dropped_middle",
+   "original_name": "Sergey Nikolayevich DUBINSKIY",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7559"
+   }
+  },
+  {
+   "case_id": "P112",
+   "query": "valiakhmetov firdavysovych",
+   "perturbation": "dropped_middle",
+   "original_name": "VALIAKHMETOV, Vadym Firdavysovych",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "44908"
+   }
+  },
+  {
+   "case_id": "P113",
+   "query": "levin olegovich",
+   "perturbation": "dropped_middle",
+   "original_name": "LEVIN, Dmitriy Olegovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "36380"
+   }
+  },
+  {
+   "case_id": "P114",
+   "query": "tolchinskiy m",
+   "perturbation": "dropped_middle",
+   "original_name": "TOLCHINSKIY, Dmitri M.",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15896"
+   }
+  },
+  {
+   "case_id": "P115",
+   "query": "arshba ionovich",
+   "perturbation": "dropped_middle",
+   "original_name": "ARSHBA, Otary Ionovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "37299"
+   }
+  },
+  {
+   "case_id": "P116",
+   "query": "abdul qul",
+   "perturbation": "dropped_middle",
+   "original_name": "ABDUL SALAM HANAFI ALI MARDAN QUL",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "TAi.027"
+   }
+  },
+  {
+   "case_id": "P117",
+   "query": "a husayn",
+   "perturbation": "dropped_middle",
+   "original_name": "A'INI, Husayn",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "44025"
+   }
+  },
+  {
+   "case_id": "P118",
+   "query": "min chol",
+   "perturbation": "dropped_middle",
+   "original_name": "MIN BYONG CHOL",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "KPi.047"
+   }
+  },
+  {
+   "case_id": "P119",
+   "query": "naway ali",
+   "perturbation": "dropped_middle",
+   "original_name": "NAWAY, Haji Ali",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "9754"
+   }
+  },
+  {
+   "case_id": "P120",
+   "query": "al ziyad",
+   "perturbation": "dropped_middle",
+   "original_name": "AL-NAKHALAH, Ziyad",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "16503"
+   }
+  },
+  {
+   "case_id": "P121",
+   "query": "boris titov",
+   "perturbation": "dropped_middle",
+   "original_name": "Boris Yuryevich TITOV",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7437"
+   }
+  },
+  {
+   "case_id": "P122",
+   "query": "harb yusif",
+   "perturbation": "dropped_middle",
+   "original_name": "HARB, Khalil Yusif",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15515"
+   }
+  },
+  {
+   "case_id": "P123",
+   "query": "salim muhammad",
+   "perturbation": "dropped_middle",
+   "original_name": "SALIM, Majdi Muhammad Muhammad",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "33288"
+   }
+  },
+  {
+   "case_id": "P124",
+   "query": "kogan borisovich",
+   "perturbation": "dropped_middle",
+   "original_name": "KOGAN, Alexander Borisovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "35645"
+   }
+  },
+  {
+   "case_id": "P125",
+   "query": "oksana tchigrina",
+   "perturbation": "dropped_middle",
+   "original_name": "Oksana Aleksandrovna TCHIGRINA",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7648"
+   }
+  },
+  {
+   "case_id": "P126",
+   "query": "vladislav tretiak",
+   "perturbation": "dropped_middle",
+   "original_name": "Vladislav Alexandrovich TRETIAK",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7195"
+   }
+  },
+  {
+   "case_id": "P127",
+   "query": "llanos luis",
+   "perturbation": "dropped_middle",
+   "original_name": "LLANOS GAZIA, Jorge Luis",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "12296"
+   }
+  },
+  {
+   "case_id": "P128",
+   "query": "rabilero armando",
+   "perturbation": "dropped_middle",
+   "original_name": "RABILERO AGUILERA, Eugenio Armando",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "57731"
+   }
+  },
+  {
+   "case_id": "P129",
+   "query": "nessim sahraoui",
+   "perturbation": "dropped_middle",
+   "original_name": "Nessim Ben Romdhane Sahraoui",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "579"
+   }
+  },
+  {
+   "case_id": "P130",
+   "query": "kolbin nikolayevich",
+   "perturbation": "dropped_middle",
+   "original_name": "KOLBIN, Sergey Nikolayevich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "36821"
+   }
+  },
+  {
+   "case_id": "P131",
+   "query": "abd kawari",
+   "perturbation": "dropped_middle",
+   "original_name": "ABD AL-LATIF BIN ABDALLAH SALIH MUHAMMAD AL-KAWARI",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "QDi.380"
+   }
+  },
+  {
+   "case_id": "P132",
+   "query": "perez isidro",
+   "perturbation": "dropped_middle",
+   "original_name": "PEREZ SALAS, Nestor Isidro",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "43476"
+   }
+  },
+  {
+   "case_id": "P133",
+   "query": "ndroqi bahri",
+   "perturbation": "dropped_middle",
+   "original_name": "NDROQI, Ylli Bahri",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "35961"
+   }
+  },
+  {
+   "case_id": "P134",
+   "query": "amir salbi",
+   "perturbation": "dropped_middle",
+   "original_name": "Amir Muhammad Sa'id Abdal-Rahman al-Salbi",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6245"
+   }
+  },
+  {
+   "case_id": "P135",
+   "query": "solozhentseva vladimirovna",
+   "perturbation": "dropped_middle",
+   "original_name": "SOLOZHENTSEVA, Natalia Vladimirovna",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "45913"
+   }
+  },
+  {
+   "case_id": "P136",
+   "query": "evgenij lavrenov",
+   "perturbation": "dropped_middle",
+   "original_name": "Evgenij Evgenievich LAVRENOV",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7104"
+   }
+  },
+  {
+   "case_id": "P137",
+   "query": "denis popov",
+   "perturbation": "dropped_middle",
+   "original_name": "Denis Gennadievich POPOV",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "8210"
+   }
+  },
+  {
+   "case_id": "P138",
+   "query": "ali ali",
+   "perturbation": "dropped_middle",
+   "original_name": "Ali ABDUL KARIM ALI",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "2299"
+   }
+  },
+  {
+   "case_id": "P139",
+   "query": "al khalid",
+   "perturbation": "dropped_middle",
+   "original_name": "AL-BARNAWI, Khalid",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15011"
+   }
+  },
+  {
+   "case_id": "P140",
+   "query": "granovsky ivanovich",
+   "perturbation": "dropped_middle",
+   "original_name": "GRANOVSKY, Aleksey Ivanovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "23585"
+   }
+  },
+  {
+   "case_id": "P141",
+   "query": "tolchinskiy dima m",
+   "perturbation": "nickname",
+   "original_name": "TOLCHINSKIY, Dmitri M.",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15896"
+   }
+  },
+  {
+   "case_id": "P142",
+   "query": "abd salam hanafi ali mardan qul",
+   "perturbation": "nickname",
+   "original_name": "ABDUL SALAM HANAFI ALI MARDAN QUL",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "TAi.027"
+   }
+  },
+  {
+   "case_id": "P143",
+   "query": "misha kizeev",
+   "perturbation": "nickname",
+   "original_name": "Mikhail Kizeev",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6577"
+   }
+  },
+  {
+   "case_id": "P144",
+   "query": "salim majdi muhammad mohd",
+   "perturbation": "nickname",
+   "original_name": "SALIM, Majdi Muhammad Muhammad",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "33288"
+   }
+  },
+  {
+   "case_id": "P145",
+   "query": "kogan sasha borisovich",
+   "perturbation": "nickname",
+   "original_name": "KOGAN, Alexander Borisovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "35645"
+   }
+  },
+  {
+   "case_id": "P146",
+   "query": "abd al latif bin abdallah salih mohd al kawari",
+   "perturbation": "nickname",
+   "original_name": "ABD AL-LATIF BIN ABDALLAH SALIH MUHAMMAD AL-KAWARI",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "QDi.380"
+   }
+  },
+  {
+   "case_id": "P147",
+   "query": "seryoga surovikin",
+   "perturbation": "nickname",
+   "original_name": "Sergei SUROVIKIN",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6721"
+   }
+  },
+  {
+   "case_id": "P148",
+   "query": "amir mohd sa id abdal rahman al salbi",
+   "perturbation": "nickname",
+   "original_name": "Amir Muhammad Sa'id Abdal-Rahman al-Salbi",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6245"
+   }
+  },
+  {
+   "case_id": "P149",
+   "query": "kozitsyn kolya",
+   "perturbation": "nickname",
+   "original_name": "KOZITSYN, Nikolai",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "17241"
+   }
+  },
+  {
+   "case_id": "P150",
+   "query": "ali abd karim ali",
+   "perturbation": "nickname",
+   "original_name": "Ali ABDUL KARIM ALI",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "2299"
+   }
+  },
+  {
+   "case_id": "P151",
+   "query": "dima svishchev",
+   "perturbation": "nickname",
+   "original_name": "Dmitry Svishchev",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6369"
+   }
+  },
+  {
+   "case_id": "P152",
+   "query": "ameen al peshawari fazeel a tul shaykh abu mohd",
+   "perturbation": "nickname",
+   "original_name": "AMEEN AL-PESHAWARI, Fazeel-A-Tul Shaykh Abu Mohammed",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "11355"
+   }
+  },
+  {
+   "case_id": "P153",
+   "query": "al muhaysini abdallah mohd bin sulayman",
+   "perturbation": "nickname",
+   "original_name": "AL-MUHAYSINI, 'Abdallah Muhammad Bin-Sulayman",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "20880"
+   }
+  },
+  {
+   "case_id": "P154",
+   "query": "mohd sholeh ibrahim",
+   "perturbation": "nickname",
+   "original_name": "MUHAMMAD SHOLEH IBRAHIM",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "QDi.395"
+   }
+  },
+  {
+   "case_id": "P155",
+   "query": "bashar sabawi ibro hasan al tikriti",
+   "perturbation": "nickname",
+   "original_name": "BASHAR SABAWI IBRAHIM HASAN AL-TIKRITI",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "733"
+   }
+  },
+  {
+   "case_id": "P156",
+   "query": "mikheychik vova vladimirovich",
+   "perturbation": "nickname",
+   "original_name": "MIKHEYCHIK, Vladimir Vladimirovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "47173"
+   }
+  },
+  {
+   "case_id": "P157",
+   "query": "yasir sabawi ibro hasan al tikriti",
+   "perturbation": "nickname",
+   "original_name": "YASIR SABAWI IBRAHIM HASAN AL-TIKRITI",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "729"
+   }
+  },
+  {
+   "case_id": "P158",
+   "query": "ustinov vova vasilyevich",
+   "perturbation": "nickname",
+   "original_name": "USTINOV, Vladimir Vasilyevich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "24143"
+   }
+  },
+  {
+   "case_id": "P159",
+   "query": "vova abdualievich vasiliev",
+   "perturbation": "nickname",
+   "original_name": "Vladimir Abdualievich VASILIEV",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7196"
+   }
+  },
+  {
+   "case_id": "P160",
+   "query": "sayyed mohd haqqani",
+   "perturbation": "nickname",
+   "original_name": "SAYYED MOHAMMED HAQQANI",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "TAi.006"
+   }
+  },
+  {
+   "case_id": "P161",
+   "query": "adem yil maz",
+   "perturbation": "spacing_hyphen",
+   "original_name": "ADEM YILMAZ",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "1101"
+   }
+  },
+  {
+   "case_id": "P162",
+   "query": "febriwansyahtuah",
+   "perturbation": "spacing_hyphen",
+   "original_name": "FEBRIWANSYAH, Tuah",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "18620"
+   }
+  },
+  {
+   "case_id": "P163",
+   "query": "valiakhmetov vadymfirdavysovych",
+   "perturbation": "spacing_hyphen",
+   "original_name": "VALIAKHMETOV, Vadym Firdavysovych",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "44908"
+   }
+  },
+  {
+   "case_id": "P164",
+   "query": "du jia xin",
+   "perturbation": "spacing_hyphen",
+   "original_name": "DU, Jiaxin",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "49763"
+   }
+  },
+  {
+   "case_id": "P165",
+   "query": "levin dmitriy oleg ovich",
+   "perturbation": "spacing_hyphen",
+   "original_name": "LEVIN, Dmitriy Olegovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "36380"
+   }
+  },
+  {
+   "case_id": "P166",
+   "query": "nabaggala ha mida",
+   "perturbation": "spacing_hyphen",
+   "original_name": "Hamida Nabaggala",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "8792"
+   }
+  },
+  {
+   "case_id": "P167",
+   "query": "katanga ge rmain",
+   "perturbation": "spacing_hyphen",
+   "original_name": "GERMAIN KATANGA",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "CDi.006"
+   }
+  },
+  {
+   "case_id": "P168",
+   "query": "arshba otaryionovich",
+   "perturbation": "spacing_hyphen",
+   "original_name": "ARSHBA, Otary Ionovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "37299"
+   }
+  },
+  {
+   "case_id": "P169",
+   "query": "abdul salam hanafiali mardan qul",
+   "perturbation": "spacing_hyphen",
+   "original_name": "ABDUL SALAM HANAFI ALI MARDAN QUL",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "TAi.027"
+   }
+  },
+  {
+   "case_id": "P170",
+   "query": "a ini hu sayn",
+   "perturbation": "spacing_hyphen",
+   "original_name": "A'INI, Husayn",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "44025"
+   }
+  },
+  {
+   "case_id": "P171",
+   "query": "minbyong chol",
+   "perturbation": "spacing_hyphen",
+   "original_name": "MIN BYONG CHOL",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "KPi.047"
+   }
+  },
+  {
+   "case_id": "P172",
+   "query": "tadicdusan",
+   "perturbation": "spacing_hyphen",
+   "original_name": "TADIC, Dusan",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "7803"
+   }
+  },
+  {
+   "case_id": "P173",
+   "query": "kizeev mik hail",
+   "perturbation": "spacing_hyphen",
+   "original_name": "Mikhail Kizeev",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6577"
+   }
+  },
+  {
+   "case_id": "P174",
+   "query": "harb khalilyusif",
+   "perturbation": "spacing_hyphen",
+   "original_name": "HARB, Khalil Yusif",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15515"
+   }
+  },
+  {
+   "case_id": "P175",
+   "query": "salim majdi muha mmad",
+   "perturbation": "spacing_hyphen",
+   "original_name": "SALIM, Majdi Muhammad Muhammad",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "33288"
+   }
+  },
+  {
+   "case_id": "P176",
+   "query": "ni ga obin",
+   "perturbation": "spacing_hyphen",
+   "original_name": "NI, Gaobin",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "47818"
+   }
+  },
+  {
+   "case_id": "P177",
+   "query": "kogan alexanderborisovich",
+   "perturbation": "spacing_hyphen",
+   "original_name": "KOGAN, Alexander Borisovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "35645"
+   }
+  },
+  {
+   "case_id": "P178",
+   "query": "alexandrovich tretiak vlad islav",
+   "perturbation": "spacing_hyphen",
+   "original_name": "Vladislav Alexandrovich TRETIAK",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7195"
+   }
+  },
+  {
+   "case_id": "P179",
+   "query": "aguilera eugenio armando rab ilero",
+   "perturbation": "spacing_hyphen",
+   "original_name": "RABILERO AGUILERA, Eugenio Armando",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "57731"
+   }
+  },
+  {
+   "case_id": "P180",
+   "query": "nessim ben romdhane sahra oui",
+   "perturbation": "spacing_hyphen",
+   "original_name": "Nessim Ben Romdhane Sahraoui",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "579"
+   }
+  },
+  {
+   "case_id": "P181",
+   "query": "kolbin sergeynikolayevich",
+   "perturbation": "spacing_hyphen",
+   "original_name": "KOLBIN, Sergey Nikolayevich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "36821"
+   }
+  },
+  {
+   "case_id": "P182",
+   "query": "abd al latif binabdallah salih muhammad al kawari",
+   "perturbation": "spacing_hyphen",
+   "original_name": "ABD AL-LATIF BIN ABDALLAH SALIH MUHAMMAD AL-KAWARI",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "QDi.380"
+   }
+  },
+  {
+   "case_id": "P183",
+   "query": "surovikin se rgei",
+   "perturbation": "spacing_hyphen",
+   "original_name": "Sergei SUROVIKIN",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6721"
+   }
+  },
+  {
+   "case_id": "P184",
+   "query": "perez salas nestor is idro",
+   "perturbation": "spacing_hyphen",
+   "original_name": "PEREZ SALAS, Nestor Isidro",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "43476"
+   }
+  },
+  {
+   "case_id": "P185",
+   "query": "qasemsoleimani",
+   "perturbation": "spacing_hyphen",
+   "original_name": "QASEM SOLEIMANI",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "8490"
+   }
+  },
+  {
+   "case_id": "P186",
+   "query": "solozhentseva nataliavladimirovna",
+   "perturbation": "spacing_hyphen",
+   "original_name": "SOLOZHENTSEVA, Natalia Vladimirovna",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "45913"
+   }
+  },
+  {
+   "case_id": "P187",
+   "query": "kurovartem",
+   "perturbation": "spacing_hyphen",
+   "original_name": "KUROV, Artem",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "44909"
+   }
+  },
+  {
+   "case_id": "P188",
+   "query": "nikolai kozit syn",
+   "perturbation": "spacing_hyphen",
+   "original_name": "KOZITSYN, Nikolai",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "17241"
+   }
+  },
+  {
+   "case_id": "P189",
+   "query": "evgenij evgenievichlavrenov",
+   "perturbation": "spacing_hyphen",
+   "original_name": "Evgenij Evgenievich LAVRENOV",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "7104"
+   }
+  },
+  {
+   "case_id": "P190",
+   "query": "denisgennadievich popov",
+   "perturbation": "spacing_hyphen",
+   "original_name": "Denis Gennadievich POPOV",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "8210"
+   }
+  },
+  {
+   "case_id": "P191",
+   "query": "aseel muth ana",
+   "perturbation": "spacing_hyphen",
+   "original_name": "ASEEL MUTHANA",
+   "truth": {
+    "source_list": "UN",
+    "reference_number": "QDi.357"
+   }
+  },
+  {
+   "case_id": "P192",
+   "query": "al khalid barn awi",
+   "perturbation": "spacing_hyphen",
+   "original_name": "AL-BARNAWI, Khalid",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "15011"
+   }
+  },
+  {
+   "case_id": "P193",
+   "query": "dmitrysvishchev",
+   "perturbation": "spacing_hyphen",
+   "original_name": "Dmitry Svishchev",
+   "truth": {
+    "source_list": "DFAT",
+    "reference_number": "6369"
+   }
+  },
+  {
+   "case_id": "P194",
+   "query": "nazarikolehjoubhossein",
+   "perturbation": "spacing_hyphen",
+   "original_name": "NAZARIKOLEHJOUB, Hossein",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "29839"
+   }
+  },
+  {
+   "case_id": "P195",
+   "query": "granovskyaleksey ivanovich",
+   "perturbation": "spacing_hyphen",
+   "original_name": "GRANOVSKY, Aleksey Ivanovich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "23585"
+   }
+  },
+  {
+   "case_id": "P196",
+   "query": "zheng fu jing",
+   "perturbation": "spacing_hyphen",
+   "original_name": "ZHENG, Fujing",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "26236"
+   }
+  },
+  {
+   "case_id": "P197",
+   "query": "shaabanbouthaina",
+   "perturbation": "spacing_hyphen",
+   "original_name": "SHAABAN, Bouthaina",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "12881"
+   }
+  },
+  {
+   "case_id": "P198",
+   "query": "kachanov olegyurevich",
+   "perturbation": "spacing_hyphen",
+   "original_name": "KACHANOV, Oleg Yurevich",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "46058"
+   }
+  },
+  {
+   "case_id": "P199",
+   "query": "benedetti villaneda alberto arma ndo",
+   "perturbation": "spacing_hyphen",
+   "original_name": "BENEDETTI VILLANEDA, Armando Alberto",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "56067"
+   }
+  },
+  {
+   "case_id": "P200",
+   "query": "ameen al peshawari fazeel a tul shaykh abumohammed",
+   "perturbation": "spacing_hyphen",
+   "original_name": "AMEEN AL-PESHAWARI, Fazeel-A-Tul Shaykh Abu Mohammed",
+   "truth": {
+    "source_list": "OFAC",
+    "reference_number": "11355"
+   }
+  },
+  {
+   "case_id": "N001",
+   "query": "Bronwyn Fairweather",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N002",
+   "query": "Bronwyn Thistlewood",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N003",
+   "query": "Bronwyn Brightwater",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N004",
+   "query": "Bronwyn Copperfield",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N005",
+   "query": "Bronwyn Dunstable",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N006",
+   "query": "Bronwyn Everingham",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N007",
+   "query": "Bronwyn Featherstone",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N008",
+   "query": "Bronwyn Greenhalgh",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N009",
+   "query": "Bronwyn Honeybourne",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N010",
+   "query": "Bronwyn Inglewood",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N011",
+   "query": "Bronwyn Kingsley-Smith",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N012",
+   "query": "Bronwyn Larkspur",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N013",
+   "query": "Bronwyn Merriweather",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N014",
+   "query": "Bronwyn Netherwood",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N015",
+   "query": "Bronwyn Oakhurst",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N016",
+   "query": "Bronwyn Pemberton",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N017",
+   "query": "Bronwyn Quigley",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N018",
+   "query": "Bronwyn Ravenscroft",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N019",
+   "query": "Bronwyn Silverthorne",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N020",
+   "query": "Bronwyn Tunbridge",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N021",
+   "query": "Bronwyn Underhill",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N022",
+   "query": "Bronwyn Waverley",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N023",
+   "query": "Bronwyn Wetherby",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N024",
+   "query": "Bronwyn Yarrow",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N025",
+   "query": "Bronwyn Ashcombe",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N026",
+   "query": "Lachlan Fairweather",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N027",
+   "query": "Lachlan Thistlewood",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N028",
+   "query": "Lachlan Brightwater",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N029",
+   "query": "Lachlan Copperfield",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N030",
+   "query": "Lachlan Dunstable",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N031",
+   "query": "Lachlan Everingham",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N032",
+   "query": "Lachlan Featherstone",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N033",
+   "query": "Lachlan Greenhalgh",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N034",
+   "query": "Lachlan Honeybourne",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N035",
+   "query": "Lachlan Inglewood",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N036",
+   "query": "Lachlan Kingsley-Smith",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N037",
+   "query": "Lachlan Larkspur",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N038",
+   "query": "Lachlan Merriweather",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N039",
+   "query": "Lachlan Netherwood",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N040",
+   "query": "Lachlan Oakhurst",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N041",
+   "query": "Lachlan Pemberton",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N042",
+   "query": "Lachlan Quigley",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N043",
+   "query": "Lachlan Ravenscroft",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N044",
+   "query": "Lachlan Silverthorne",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N045",
+   "query": "Lachlan Tunbridge",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N046",
+   "query": "Lachlan Underhill",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N047",
+   "query": "Lachlan Waverley",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N048",
+   "query": "Lachlan Wetherby",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N049",
+   "query": "Lachlan Yarrow",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N050",
+   "query": "Lachlan Ashcombe",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N051",
+   "query": "Matilda Fairweather",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N052",
+   "query": "Matilda Thistlewood",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N053",
+   "query": "Matilda Brightwater",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N054",
+   "query": "Matilda Copperfield",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N055",
+   "query": "Matilda Dunstable",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N056",
+   "query": "Matilda Everingham",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N057",
+   "query": "Matilda Featherstone",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N058",
+   "query": "Matilda Greenhalgh",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N059",
+   "query": "Matilda Honeybourne",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N060",
+   "query": "Matilda Inglewood",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N061",
+   "query": "Matilda Kingsley-Smith",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N062",
+   "query": "Matilda Larkspur",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N063",
+   "query": "Matilda Merriweather",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N064",
+   "query": "Matilda Netherwood",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N065",
+   "query": "Matilda Oakhurst",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N066",
+   "query": "Matilda Pemberton",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N067",
+   "query": "Matilda Quigley",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N068",
+   "query": "Matilda Ravenscroft",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N069",
+   "query": "Matilda Silverthorne",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N070",
+   "query": "Matilda Tunbridge",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N071",
+   "query": "Matilda Underhill",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N072",
+   "query": "Matilda Waverley",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N073",
+   "query": "Matilda Wetherby",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N074",
+   "query": "Matilda Yarrow",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N075",
+   "query": "Matilda Ashcombe",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N076",
+   "query": "Angus Fairweather",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N077",
+   "query": "Angus Thistlewood",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N078",
+   "query": "Angus Brightwater",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N079",
+   "query": "Angus Copperfield",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N080",
+   "query": "Angus Dunstable",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N081",
+   "query": "Angus Everingham",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N082",
+   "query": "Angus Featherstone",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N083",
+   "query": "Angus Greenhalgh",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N084",
+   "query": "Angus Honeybourne",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N085",
+   "query": "Angus Inglewood",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N086",
+   "query": "Angus Kingsley-Smith",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N087",
+   "query": "Angus Larkspur",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N088",
+   "query": "Angus Merriweather",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N089",
+   "query": "Angus Netherwood",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N090",
+   "query": "Angus Oakhurst",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N091",
+   "query": "Angus Pemberton",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N092",
+   "query": "Angus Quigley",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N093",
+   "query": "Angus Ravenscroft",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N094",
+   "query": "Angus Silverthorne",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N095",
+   "query": "Angus Tunbridge",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N096",
+   "query": "Angus Underhill",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N097",
+   "query": "Angus Waverley",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N098",
+   "query": "Angus Wetherby",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N099",
+   "query": "Angus Yarrow",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  },
+  {
+   "case_id": "N100",
+   "query": "Angus Ashcombe",
+   "perturbation": "negative",
+   "original_name": null,
+   "truth": null
+  }
+ ]
+}
