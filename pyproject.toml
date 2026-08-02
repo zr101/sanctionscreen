@@ -3,7 +3,7 @@ name = "sanctionscreen"
 version = "0.1.0"
 description = "KYC name-screening microservice: screens customer names against the DFAT, UN and OFAC sanctions lists with layered, explainable matching."
 readme = "README.md"
-requires-python = ">=3.12,<3.13"
+requires-python = ">=3.12,<3.14"
 dependencies = [
     "fastapi>=0.115",
     "uvicorn[standard]>=0.30",
