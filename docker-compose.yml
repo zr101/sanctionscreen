@@ -1,0 +1,27 @@
+services:
+  api:
+    build:
+      context: .
+      target: api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persists audit trail and refreshed lists across restarts; seeded from
+      # the image's baked data/ on first run.
+      - sanctions-data:/app/data
+    restart: unless-stopped
+
+  ui:
+    build:
+      context: .
+      target: ui
+    ports:
+      - "8501:8501"
+    environment:
+      SANCTIONSCREEN_API_URL: http://api:8000
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  sanctions-data:

@@ -1,0 +1,51 @@
+name: Refresh sanctions lists
+
+on:
+  schedule:
+    # Sundays 18:00 UTC ≈ Mondays 04:00 AEST — lists are quiet on weekends.
+    - cron: "0 18 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      - name: Re-ingest all lists
+        run: |
+          uv run python -m sanctionscreen.ingestion.cli --source all --no-embed \
+            | tee ingest-summary.txt
+
+      - name: Guard against runaway database size
+        run: |
+          size=$(stat -c%s data/sanctions.db)
+          echo "data/sanctions.db is ${size} bytes"
+          test "$size" -lt 104857600  # 100 MB
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sanctions.db data/cache
+          if git diff --cached --quiet; then
+            echo "No list changes this week — nothing to commit."
+            exit 0
+          fi
+          {
+            echo "chore: weekly sanctions list refresh"
+            echo
+            cat ingest-summary.txt
+          } > commit-msg.txt
+          git commit -F commit-msg.txt
+          git push
