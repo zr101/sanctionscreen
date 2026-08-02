@@ -1,0 +1,9 @@
+# For the hosted demo (Streamlit Community Cloud). Local dev uses uv + pyproject.toml.
+# CPU-only torch via direct wheel URLs: index-strategy-proof (uv ignores extra
+# indexes for packages that also exist on PyPI) and avoids the multi-GB CUDA build.
+torch @ https://download.pytorch.org/whl/cpu/torch-2.13.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl ; python_version == "3.12"
+torch @ https://download.pytorch.org/whl/cpu/torch-2.13.0%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl ; python_version == "3.13"
+sanctionscreen[embeddings] @ git+https://github.com/zr101/sanctionscreen.git@main
+streamlit==1.60.0
+pandas>=2.2
+huggingface_hub>=1.0
