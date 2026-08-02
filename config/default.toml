@@ -65,3 +65,5 @@ enabled = true
 model = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 # Separate, regenerable vectors file — deliberately not committed to git.
 vectors_path = "data/embeddings.db"
+# Recompute missing vectors when the API starts (first run / fresh container).
+precompute_on_startup = true
