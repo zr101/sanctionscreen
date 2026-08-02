@@ -73,6 +73,10 @@ ignore_missing_imports = true
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+# src on pythonpath keeps tests working even when the editable-install .pth is
+# skipped (macOS: uv marks venv files UF_HIDDEN, and Python >=3.12 skips
+# hidden .pth files).
+pythonpath = ["src"]
 markers = [
     "embeddings: tests that require the sentence-transformers model (deselect with '-m \"not embeddings\"')",
 ]
