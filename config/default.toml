@@ -1,0 +1,65 @@
+# SanctionScreen configuration.
+# Every value here can be overridden with environment variables using the
+# SANCTIONSCREEN_ prefix and "__" as the nesting delimiter, e.g.
+#   SANCTIONSCREEN_SCORING__DEFAULT_THRESHOLD=80
+
+[database]
+path = "data/sanctions.db"
+
+[sources.dfat]
+# New-format XLSX published since Nov 2025 (the old regulation8_consolidated.xls is gone).
+url = "https://www.dfat.gov.au/sites/default/files/Australian_Sanctions_Consolidated_List.xlsx"
+
+[sources.un]
+# 302-redirects to a signed, short-lived blob URL; the client follows redirects
+# and must never persist the redirected URL.
+url = "https://scsanctions.un.org/resources/xml/en/consolidated.xml"
+
+[sources.ofac]
+# OFAC Sanctions List Service. HEAD requests return 405 — always GET.
+sdn_url = "https://sanctionslistservice.ofac.treas.gov/api/download/sdn.csv"
+alt_url = "https://sanctionslistservice.ofac.treas.gov/api/download/alt.csv"
+add_url = "https://sanctionslistservice.ofac.treas.gov/api/download/add.csv"
+comments_url = "https://sanctionslistservice.ofac.treas.gov/api/download/sdn_comments.csv"
+
+[normalisation]
+# Stripped only when they appear as LEADING tokens; both variants are indexed
+# when stripping changes the name (see DECISIONS.md D9).
+honorifics = [
+    "mr", "mrs", "ms", "miss", "dr", "prof", "sir", "lord", "lady",
+    "haji", "hajji", "hadji", "al hajj", "al haj", "alhaj", "el hajj",
+    "mullah", "mulla", "maulavi", "maulawi", "mawlawi", "moulavi",
+    "sheikh", "shaykh", "sheik", "shaikh", "sayyid", "sayed", "syed",
+    "imam", "ustad", "qari", "hafiz",
+    "general", "colonel", "major", "captain", "lieutenant", "brigadier",
+    "eng", "engineer",
+]
+
+[scoring]
+# Layer combination: score = max(w_layer * sub_score for each fired layer),
+# plus a corroboration bonus when >= corroboration_min_layers non-exact layers
+# score >= corroboration_floor. See DECISIONS.md D4.
+strategy = "max"
+weight_exact = 1.0
+weight_fuzzy = 0.97
+weight_phonetic = 0.90
+weight_embedding = 0.85
+corroboration_bonus = 3.0
+corroboration_floor = 80.0
+corroboration_min_layers = 2
+score_cap = 99.0
+# fuzzy sub-score = token_sort_weight * token_sort_ratio + partial_weight * partial_ratio
+fuzzy_token_sort_weight = 0.7
+fuzzy_partial_weight = 0.3
+# candidate-generation cutoffs (cheap pre-filters, not the reporting threshold)
+fuzzy_cutoff = 60.0
+fuzzy_candidate_limit = 64
+embedding_cosine_cutoff = 0.45
+embedding_candidate_limit = 64
+# API defaults
+default_threshold = 75.0
+default_max_results = 10
+
+[embedding]
+enabled = true
+model = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
