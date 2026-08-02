@@ -109,7 +109,7 @@ if name.strip():
     st.dataframe(
         table,
         hide_index=True,
-        use_container_width=True,
+        width="stretch",
         column_config={
             "score": st.column_config.ProgressColumn(
                 "score", min_value=0, max_value=100, format="%.1f"

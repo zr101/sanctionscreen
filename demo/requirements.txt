@@ -1,0 +1,5 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.13.0+cpu
+sanctionscreen[embeddings] @ git+https://github.com/zr101/sanctionscreen.git@main
+streamlit==1.60.0
+pandas>=2.2
