@@ -38,11 +38,13 @@ overridden with `SANCTIONSCREEN_*` environment variables.
 substring hits ("Ali" vs "Ali Baba Trading Co"); token_sort_ratio handles name-order
 swaps, which is the case the brief calls out.
 
-## D6 — The committed SQLite DB excludes embedding vectors
-Embedding blobs would push `data/sanctions.db` past 100 MB and bloat every git clone.
-The committed DB carries entities/names/log tables only; vectors are recomputed on
-first run or container start (~1–2 min CPU). Alternative: Git LFS — rejected to keep
-the repo dependency-free for reviewers.
+## D6 — Embedding vectors live in a separate, uncommitted SQLite file
+Embedding blobs would push the committed DB past 100 MB and bloat every git clone.
+Vectors sit in `data/embeddings.db` (gitignored, regenerable): the committed
+`data/sanctions.db` carries entities/names/log tables only, and the vectors file is
+recomputed incrementally at ingestion or on first run (~1–2 min CPU for all 54k
+names). Alternative: Git LFS — rejected to keep the repo dependency-free for
+reviewers.
 
 ## D7 — Source URLs live in config, not code
 All three publishers have moved their endpoints within the last two years (DFAT to a

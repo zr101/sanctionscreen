@@ -63,3 +63,5 @@ default_max_results = 10
 [embedding]
 enabled = true
 model = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+# Separate, regenerable vectors file — deliberately not committed to git.
+vectors_path = "data/embeddings.db"

@@ -79,6 +79,7 @@ class ScoringConfig(BaseModel):
 class EmbeddingConfig(BaseModel):
     enabled: bool = True
     model: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+    vectors_path: Path = Path("data/embeddings.db")
 
 
 def _config_file() -> Path | None:

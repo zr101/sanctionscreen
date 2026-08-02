@@ -11,7 +11,7 @@ class TestDb:
             row["name"]
             for row in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")
         }
-        assert {"entities", "names", "name_embeddings", "ingestion_log", "screenings"} <= tables
+        assert {"entities", "names", "ingestion_log", "screenings"} <= tables
         conn.close()
 
     def test_connect_is_idempotent(self, tmp_path):

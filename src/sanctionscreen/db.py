@@ -1,7 +1,8 @@
 """SQLite connection management and schema bootstrap.
 
-One file holds the sanctions data, the ingestion log and the screening audit
-trail so the whole state of the service is a single committable artifact.
+One committable file holds the sanctions data, the ingestion log and the
+screening audit trail. Embedding vectors live in a separate, regenerable
+data/embeddings.db (DECISIONS.md D6) so this file stays small in git.
 """
 
 from __future__ import annotations
@@ -40,12 +41,6 @@ CREATE TABLE IF NOT EXISTS names (
 CREATE INDEX IF NOT EXISTS idx_names_norm      ON names(name_normalised);
 CREATE INDEX IF NOT EXISTS idx_names_metaphone ON names(metaphone_key);
 CREATE INDEX IF NOT EXISTS idx_names_entity    ON names(entity_id);
-
-CREATE TABLE IF NOT EXISTS name_embeddings (
-    name_id INTEGER PRIMARY KEY REFERENCES names(id) ON DELETE CASCADE,
-    model   TEXT NOT NULL,
-    vector  BLOB NOT NULL
-);
 
 CREATE TABLE IF NOT EXISTS ingestion_log (
     id                INTEGER PRIMARY KEY,

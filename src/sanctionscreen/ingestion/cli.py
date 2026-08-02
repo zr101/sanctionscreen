@@ -90,11 +90,30 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--offline", action="store_true", help="use cached copies, no network access"
     )
+    parser.add_argument(
+        "--no-embed", action="store_true", help="skip embedding precomputation"
+    )
     args = parser.parse_args(argv)
 
     settings = get_settings()
     sources = ["dfat", "un", "ofac"] if args.source == "all" else [args.source]
     results = [ingest_source(s, settings, offline=args.offline) for s in sources]
+
+    if any(results) and not args.no_embed:
+        from sanctionscreen.matching.embedding import embeddings_available, precompute_embeddings
+
+        if settings.embedding.enabled and embeddings_available():
+            conn = connect(settings.database.path)
+            try:
+                computed = precompute_embeddings(
+                    conn, settings.embedding.model, settings.embedding.vectors_path
+                )
+                print(f"[EMBED] {computed} new vectors ({settings.embedding.model})")
+            finally:
+                conn.close()
+        else:
+            print("[EMBED] skipped (disabled or sentence-transformers not installed)")
+
     return 0 if any(results) else 1
 
 
