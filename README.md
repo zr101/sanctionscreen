@@ -1,9 +1,16 @@
 # SanctionScreen
 
+[![CI](https://github.com/zr101/sanctionscreen/actions/workflows/ci.yml/badge.svg)](https://github.com/zr101/sanctionscreen/actions/workflows/ci.yml)
+[![Live demo](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sanctionscreens.streamlit.app)
+
 A KYC name-screening microservice that screens customer names against three
 official sanctions lists — Australia's **DFAT Consolidated List**, the
 **UN Security Council Consolidated List** and the **US OFAC SDN List** — and
 returns ranked, *explainable* matches with a full audit trail.
+
+**▶ Try it live: [sanctionscreens.streamlit.app](https://sanctionscreens.streamlit.app)** —
+type *Osama bin Laden*, *Vladimr Putin* or *Владимир Путин* and expand a
+match to see the layer-by-layer scoring.
 
 Built as a portfolio project for AML/financial-crime and data roles: every
 reporting entity under Australia's AML/CTF Act must screen customers against
