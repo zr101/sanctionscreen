@@ -101,6 +101,7 @@ class TestEmbeddingLayer:
         assert any("تستمان" in m or "Testman" in m for m in matched)
 
     def test_stale_vectors_removed(self, tmp_path):
+        pytest.importorskip("sentence_transformers")
         from sanctionscreen.db import connect
         from sanctionscreen.ingestion.base import ParsedEntity, ParsedName, upsert_entities
         from sanctionscreen.matching.embedding import open_vectors_db, precompute_embeddings
