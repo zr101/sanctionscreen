@@ -9,7 +9,7 @@ official sanctions lists — Australia's **DFAT Consolidated List**, the
 returns ranked, *explainable* matches with a full audit trail.
 
 **▶ Try it live: [sanctionscreens.streamlit.app](https://sanctionscreens.streamlit.app)** —
-type *Osama bin Laden*, *Vladimr Putin* or *Владимир Путин* and expand a
+type *Vladimr Putin*, *Lavrov Sergei* or *Владимир Путин* and expand a
 match to see the layer-by-layer scoring.
 
 Built as a portfolio project for AML/financial-crime and data roles: every
@@ -19,17 +19,17 @@ the lookup — it's the names.
 
 ## The problem: names don't match themselves
 
-Exact string matching fails on real sanctions data. One listed individual is
-spelled *Usama bin Ladin* on the OFAC list, *Osama bin Laden* in most Western
-media, and *أسامة بن لادن* in the original Arabic. A customer might be
-onboarded as "Laden, Osama Bin". None of these are equal as strings, and a
-screening system that misses them fails at its one job. The same applies to:
+Exact string matching fails on real sanctions data. The same listed
+individual appears as *LAVROV, Sergey* on one list and *Sergei Viktorovich
+Lavrov* on another; a customer might be onboarded as "Lavrov Sergei", or in
+the original Cyrillic. None of these are equal as strings, and a screening
+system that misses them fails at its one job. The same applies to:
 
-- **transliteration variants** — Mohammed / Muhammad / Mohamed / Mohamad
-- **name-order swaps** — *Ali Hassan* vs *Hassan Ali*
+- **transliteration variants** — *Sergei / Sergey / Serguei*, *Aleksandr / Alexander*
+- **name-order swaps** — *Lavrov Sergei* vs *Sergei Lavrov*
 - **typos** — *Vladimr Putin*
-- **dropped middle names** — *Saddam Hussein* vs *Saddam Hussein al-Tikriti*
-- **honorifics** — *Haji Abdul Manan* vs *Abdul Manan*
+- **dropped middle names** — *Vladimir Putin* vs *Vladimir Vladimirovich Putin*
+- **honorifics and titles** — captured as part of the name at onboarding
 - **different scripts entirely** — *Владимир Путин* vs *PUTIN, Vladimir*
 
 SanctionScreen layers four matching strategies, cheapest first, and combines
@@ -38,10 +38,10 @@ them into one 0–100 score with per-layer sub-scores so an analyst can see
 
 ```text
 $ curl -s -X POST localhost:8000/screen -H 'Content-Type: application/json' \
-    -d '{"name": "Usama bin Ladin"}'
+    -d '{"name": "Vladimr Putin"}'
 
-score 93.0 — "BIN LADIN, Usama" (OFAC 6365)
-  exact 0 · phonetic 100 · fuzzy 92.5 · embedding 89.8
+score 93.0 — "PUTIN, Vladimir" (OFAC 35096)
+  exact 0 · phonetic 100 · fuzzy 87.4 · embedding 94.0
 ```
 
 ## Architecture
@@ -138,7 +138,7 @@ UI on [localhost:8501](http://localhost:8501). Then:
 ```bash
 curl -s -X POST http://localhost:8000/screen \
   -H 'Content-Type: application/json' \
-  -d '{"name": "Usama bin Ladin", "threshold": 75, "max_results": 5}' | jq
+  -d '{"name": "Vladimr Putin", "threshold": 75, "max_results": 5}' | jq
 ```
 
 Local development (Python 3.12 via [uv](https://docs.astral.sh/uv/)):

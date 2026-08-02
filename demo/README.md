@@ -25,9 +25,9 @@ Four matching layers — exact, Double Metaphone phonetics, RapidFuzz fuzzy and
 multilingual sentence embeddings — combine into one 0–100 score with
 per-layer sub-scores, so you can see *why* a name matched. Try:
 
-- `Usama bin Ladin` · `Osama bin Laden` · `Laden Osama bin` (transliteration, order)
-- `Vladimr Putin` (typo) · `Владимир Путин` (Cyrillic → Latin via embeddings)
-- `Haji Abdul Manan` (honorific stripping)
+- `Vladimr Putin` (typo) · `Lavrov Sergei` (order swap + transliteration)
+- `Владимир Путин` (Cyrillic → Latin via embeddings)
+- `Kim Jong Un` (exact match)
 
 Source, benchmarks and threshold-tuning guide:
 **[github.com/zr101/sanctionscreen](https://github.com/zr101/sanctionscreen)**

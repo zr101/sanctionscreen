@@ -24,11 +24,11 @@ from sanctionscreen.matching.engine import MatchingEngine
 DATA_REPO = "zaeemr/sanctionscreen-data"
 
 EXAMPLES = [
-    "Usama bin Ladin",
-    "Laden Osama bin",
+    "Vladimir Putin",
     "Vladimr Putin",
+    "Lavrov Sergei",
     "Владимир Путин",
-    "Haji Abdul Manan",
+    "Kim Jong Un",
 ]
 
 st.set_page_config(page_title="SanctionScreen", page_icon="🛡️", layout="wide")
@@ -103,7 +103,7 @@ for col, example in zip(cols[1:], EXAMPLES, strict=True):
 name = st.text_input(
     "Name to screen",
     key="query",
-    placeholder="any script, any order — e.g. Usama bin Ladin",
+    placeholder="any script, any order — e.g. Vladimr Putin",
 )
 
 if name and name.strip():

@@ -19,7 +19,7 @@ class ScreenRequest(BaseModel):
         max_length=500,
         description="Customer name to screen, as captured (any script; "
         "normalisation, transliteration and fuzzy matching are handled server-side).",
-        examples=["Usama bin Ladin"],
+        examples=["Sergey Lavrov"],
     )
     threshold: float | None = Field(
         default=None,
