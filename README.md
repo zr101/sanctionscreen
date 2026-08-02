@@ -3,18 +3,33 @@
 [![CI](https://github.com/zr101/sanctionscreen/actions/workflows/ci.yml/badge.svg)](https://github.com/zr101/sanctionscreen/actions/workflows/ci.yml)
 [![Live demo](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sanctionscreens.streamlit.app)
 
-A KYC name-screening microservice that screens customer names against three
-official sanctions lists — Australia's **DFAT Consolidated List**, the
-**UN Security Council Consolidated List** and the **US OFAC SDN List** — and
-returns ranked, *explainable* matches with a full audit trail.
+**Is this person on a sanctions list?** — answered in one API call, with the
+reasoning shown.
+
+A sanctions list is a government register of people, companies, ships and
+aircraft that everyone else is banned from dealing with: their assets are
+frozen, funds and property cannot be made available to them, and many are
+barred from travel. Handling money for someone on a list is a criminal
+offence, so banks, insurers, crypto exchanges, law firms and exporters have
+to check every customer against the lists before doing business — and again
+whenever the lists change.
+
+SanctionScreen screens a name against three official lists — Australia's
+**DFAT Consolidated List**, the **UN Security Council Consolidated List** and
+the **US OFAC SDN List** (≈24,000 listed parties, 54,000 searchable names) —
+and returns ranked, *explainable* matches with a full audit trail.
+
+The listings cover measures such as Russia/Ukraine and DPRK sanctions,
+Iran-related restrictions, counter-terrorism designations, narcotics
+trafficking and human-rights (Magnitsky-style) programs; every result carries
+the source list and its own reference number so you can look up exactly which
+program a match falls under.
 
 **▶ Try it live: [sanctionscreens.streamlit.app](https://sanctionscreens.streamlit.app)** —
 type *Vladimr Putin*, *Lavrov Sergei* or *Владимир Путин* and expand a
 match to see the layer-by-layer scoring.
 
-Banks and other regulated businesses must check the people they deal with
-against official sanctions lists. The interesting part of that check is not
-the lookup — it's the names.
+The interesting part of that check is not the lookup — it's the names.
 
 ## The problem: names don't match themselves
 

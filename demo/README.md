@@ -17,9 +17,14 @@ repo-root `requirements.txt`); the databases download at boot from the public
 HF dataset [zaeemr/sanctionscreen-data](https://huggingface.co/datasets/zaeemr/sanctionscreen-data).
 The frontmatter above also makes this folder deployable as an HF Docker Space.
 
-Layered, explainable KYC name screening against the **DFAT Consolidated
-List**, the **UN Security Council Consolidated List** and the **US OFAC SDN
-list** (≈24k entities / 54k searchable names, refreshed weekly).
+**Is this person on a sanctions list?** Sanctions lists are government
+registers of people, companies and ships that everyone else is banned from
+dealing with — assets frozen, funds blocked, travel barred — so regulated
+businesses must check customers against them.
+
+This screens a name against the **DFAT Consolidated List** (Australia), the
+**UN Security Council Consolidated List** and the **US OFAC SDN list**
+(≈24k listed parties / 54k searchable names, refreshed weekly).
 
 Four matching layers — exact, Double Metaphone phonetics, RapidFuzz fuzzy and
 multilingual sentence embeddings — combine into one 0–100 score with
