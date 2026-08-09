@@ -2992,7 +2992,6 @@
 11749,17760,-0- ,-0- ,"Iraq",-0- 
 11750,17762,"13/F Yuhang Building No. 525, Sichuan Road (North)","Shanghai","China",-0- 
 11752,17813,"c/o UNIVISA S.A.","Cali","Colombia",-0- 
-11753,17812,-0- ,-0- ,"Colombia",-0- 
 11755,24304,-0- ,-0- ,-0- ,-0- 
 11760,17796,-0- ,"Bogota","Colombia",-0- 
 11767,17786,"Carrera 2 Oeste No. 51-51","Cali","Colombia",-0- 
@@ -3051,7 +3050,6 @@
 11811,18037,"c/o INVERSIONES ADAG LTDA.","Bogota","Colombia",-0- 
 11811,18038,"c/o INVERSIONES LOS TUNJOS LTDA.","Bogota","Colombia",-0- 
 11811,18039,"c/o RECIFIBRAS SECUNDARIAS LTDA.","Bogota","Colombia",-0- 
-11812,33647,-0- ,-0- ,-0- ,-0- 
 11813,18030,"c/o HERJEZ LTDA.","Bogota","Colombia",-0- 
 11814,18026,"c/o BINGO INTERNACIONAL E.U.","Bogota","Colombia",-0- 
 11814,18027,"c/o INVERSIONES GANADERAS Y PALMERAS S.A.","Bogota","Colombia",-0- 
@@ -5061,16 +5059,10 @@
 16553,26841,-0- ,-0- ,-0- ,-0- 
 16557,25059,-0- ,-0- ,"Pakistan",-0- 
 16560,25065,-0- ,-0- ,-0- ,-0- 
-16580,25080,"Jose Aguilar Barraza 328, Al Poniente de la Colonia Jorge Almeda","Culiacan, Sinaloa","Mexico",-0- 
-16580,25108,"Av. Naciones Unidas # 5759, Casa 34, Col. Parque Regency","Zapopan, Jalisco 44110","Mexico",-0- 
-16581,25524,-0- ,-0- ,-0- ,-0- 
-16582,25083,"Nogalitos No. 17","Quila, Sinaloa","Mexico",-0- 
 16601,25100,-0- ,-0- ,-0- ,-0- 
 16604,25104,"1-1-12 Kantake Kokurakita-ku","Kitakyushu City, Fukuoka","Japan",-0- 
 16605,25718,"4-chome, 19-15 Kumagai, Kokurakita-ku","Kitakyushu City, Fukuoka","Japan",-0- 
 16606,25106,-0- ,-0- ,-0- ,-0- 
-16607,25110,"Avenida Puerto Mazatlan 6, Colonia Parque Industrial Alfredo V Bonfil","Mazatlan, Sinaloa CP 82050","Mexico",-0- 
-16608,25112,"Av. Juan Palomar y Arias # 569, Col. Jardines Universidad","Zapopan, Jalisco 45110","Mexico",-0- 
 16622,25123,-0- ,-0- ,-0- ,-0- 
 16623,25124,-0- ,-0- ,-0- ,-0- 
 16625,25126,-0- ,-0- ,-0- ,-0- 
@@ -5082,7 +5074,6 @@
 16637,25148,"Aldea Espiritu Santo","Municipio de Florida, Departamento de Copan","Honduras",-0- 
 16641,25160,-0- ,-0- ,-0- ,-0- 
 16642,25161,-0- ,-0- ,-0- ,-0- 
-16643,25163,"Puerto de Mazatlan 6 D, Parque Industrial Alfredo V. Bonfil","Mazatlan, Sinaloa 82050","Mexico",-0- 
 16646,25170,-0- ,-0- ,-0- ,-0- 
 16648,25485,-0- ,-0- ,-0- ,-0- 
 16649,25175,-0- ,-0- ,-0- ,-0- 
@@ -14191,8 +14182,6 @@
 39216,58619,"Waizayandar Road, No.15, Ngwe Kyar Yan Quarter","South Okkalapa Township, Yangon Region","Burma",-0- 
 39217,58463,"Waizayandar Road, No.15, Ngwe Kyar Yan Quarter","South Okkalapa Township, Yangon Region","Burma",-0- 
 39219,58620,-0- ,-0- ,"Burma",-0- 
-39236,70230,"Hurriya Square, Building 66, Street 25, Sector 925, Babil Neighborhood","Baghdad","Iraq",-0- 
-39236,70244,"Jamia Street, Jadriya","Baghdad","Iraq",-0- 
 39256,58484,-0- ,-0- ,"Iran",-0- 
 39257,58487,-0- ,-0- ,"Iran",-0- 
 39258,58488,"Vozara Street, corner of 25th Street, District 6","Tehran","Iran",-0- 
@@ -17681,8 +17670,6 @@
 47148,70212,-0- ,"Rajin-Songbong Free Economic and Trade Zone","Korea, North",-0- 
 47149,70214,-0- ,"Malatya","Turkey",-0- 
 47168,70232,-0- ,"Baghdad","Iraq",-0- 
-47169,70233,-0- ,-0- ,-0- ,-0- 
-47170,70234,-0- ,-0- ,-0- ,-0- 
 47171,70236,"Astrakhan Oblast",-0- ,"Russia",-0- 
 47172,70238,"Astrakhan Oblast",-0- ,"Russia",-0- 
 47173,70240,-0- ,-0- ,"Russia",-0- 
@@ -24918,4 +24905,34 @@
 58234,89474,-0- ,"Bandar Abbas, Hormozgan Province","Iran",-0- 
 58235,89477,"Rm 8 15/F Witty Coml Bldg, 1A-1L Tung Choi St, Mongkok, Kowloon","Hong Kong","China",-0- 
 58236,89478,-0- ,-0- ,-0- ,-0- 
+58239,89485,"Ground Floor, No. 8, Gozar Merdad Alley, Qods Town (West)","Tehran 1465663166","Iran",-0- 
+58258,89613,"DMCC Business Centre, BA1024","Dubai","United Arab Emirates",-0- 
+58259,89504,-0- ,"Dubai","United Arab Emirates",-0- 
+58266,89534,-0- ,-0- ,"Iran",-0- 
+58267,89536,-0- ,-0- ,"Iran",-0- 
+58268,89538,-0- ,"Dubai","United Arab Emirates",-0- 
+58269,89603,-0- ,-0- ,"Iran",-0- 
+58270,89541,"Room 11, 8/F, On Cheong Factory Building, No. 19 Tai Yip Street, Kwun Tong","Hong Kong","China",-0- 
+58271,89543,"60, Paya Lebar Square, 54, Paya Lebar Road",-0- ,"Singapore",-0- 
+58272,89545,-0- ,"Dubai","United Arab Emirates",-0- 
+58274,89549,"Office 1205, Riggat Al Buteen","Dubai","United Arab Emirates",-0- 
+58275,89551,"Unit 32, 3/F, Block A, The K-Star, Manning Industrial Building 118, How Ming St, Kwun Tong, Kowloon","Hong Kong","China",-0- 
+58276,89553,"Unit 33A, 3/F, The K-Star, Manning Industrial Center, 116-118, How Ming St, Kwun Tong, Kowloon","Hong Kong","China",-0- 
+58277,89555,-0- ,-0- ,"Iran",-0- 
+58284,89570,-0- ,"Kish","Iran",-0- 
+58284,89571,-0- ,"Dubai","United Arab Emirates",-0- 
+58285,89573,-0- ,"Dubai","United Arab Emirates",-0- 
+58287,89576,-0- ,"Tblisi","Georgia",-0- 
+58288,89579,"22B 21A Bartycka 00-716","Warsaw","Poland",-0- 
+58290,89582,-0- ,"Havana","Cuba",-0- 
+58291,89584,-0- ,"Havana","Cuba",-0- 
+58292,89586,-0- ,"Havana","Cuba",-0- 
+58293,89588,-0- ,"Havana","Cuba",-0- 
+58294,89590,-0- ,"Havana","Cuba",-0- 
+58295,89592,-0- ,"Havana","Cuba",-0- 
+58296,89594,-0- ,"Havana","Cuba",-0- 
+58297,89596,-0- ,-0- ,"Cuba",-0- 
+58298,89598,-0- ,-0- ,"Cuba",-0- 
+58299,89600,-0- ,"Moscow","Russia",-0- 
+58300,89602,-0- ,"Beijing","China",-0- 
 
