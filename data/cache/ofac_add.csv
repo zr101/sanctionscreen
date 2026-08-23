@@ -24648,6 +24648,9 @@
 57903,88833,-0- ,-0- ,"Cuba",-0- 
 57904,88835,-0- ,"Havana","Cuba",-0- 
 57905,88837,"Calle 17 No. 301 e/ H e I, Vedado","Havana","Cuba",-0- 
+57905,89925,"Casa De La Amistad, Paseo e/ 17 y 19, Vedado","Havana","Cuba",-0- 
+57905,89926,"Casa Memorial Salvador Allende, Calle 13 Entre D y E, Vedado","Havana","Cuba",-0- 
+57905,89927,"Campamento Internacional Julio Antonio Mella Caimito","Artemisa Province","Cuba",-0- 
 57906,88839,"Calle 13 #504 e/ D y E, Vedado","Havana","Cuba",-0- 
 57913,88854,-0- ,-0- ,"Iran",-0- 
 57914,88856,"Rm 1526, Unit 1, 15/F, Wah Wan Ind. Building, No. 2 Kin Fat Lane, Tuen Mun","Hong Kong","China",-0- 
@@ -24682,6 +24685,7 @@
 57955,88928,"Fabrica No. 54 e/ Aspuru y Linea del Ferrocarril, Habana Vieja","Havana","Cuba",-0- 
 57956,88930,"Calzada de Guines S/N E/ Virgen del Camino y Calle Linea del Ferrocarril, RPTO Los Angeles","Havana","Cuba",-0- 
 57957,88934,-0- ,"Dubai","United Arab Emirates",-0- 
+57958,89691,-0- ,-0- ,"Ecuador",-0- 
 57960,88936,-0- ,"Charlestown","Saint Kitts and Nevis",-0- 
 57961,88939,-0- ,-0- ,"France",-0- 
 57962,88941,-0- ,-0- ,"Syria",-0- 
@@ -24906,8 +24910,11 @@
 58235,89477,"Rm 8 15/F Witty Coml Bldg, 1A-1L Tung Choi St, Mongkok, Kowloon","Hong Kong","China",-0- 
 58236,89478,-0- ,-0- ,-0- ,-0- 
 58239,89485,"Ground Floor, No. 8, Gozar Merdad Alley, Qods Town (West)","Tehran 1465663166","Iran",-0- 
+58253,89492,"Gamze Sokak 15 3","Avcilar, Istanbul","Turkey",-0- 
 58258,89613,"DMCC Business Centre, BA1024","Dubai","United Arab Emirates",-0- 
 58259,89504,-0- ,"Dubai","United Arab Emirates",-0- 
+58265,89531,-0- ,-0- ,"Turkey",-0- 
+58265,89532,-0- ,-0- ,"United Arab Emirates",-0- 
 58266,89534,-0- ,-0- ,"Iran",-0- 
 58267,89536,-0- ,-0- ,"Iran",-0- 
 58268,89538,-0- ,"Dubai","United Arab Emirates",-0- 
@@ -24919,9 +24926,11 @@
 58275,89551,"Unit 32, 3/F, Block A, The K-Star, Manning Industrial Building 118, How Ming St, Kwun Tong, Kowloon","Hong Kong","China",-0- 
 58276,89553,"Unit 33A, 3/F, The K-Star, Manning Industrial Center, 116-118, How Ming St, Kwun Tong, Kowloon","Hong Kong","China",-0- 
 58277,89555,-0- ,-0- ,"Iran",-0- 
+58278,89557,-0- ,-0- ,"Virgin Islands, British",-0- 
 58284,89570,-0- ,"Kish","Iran",-0- 
 58284,89571,-0- ,"Dubai","United Arab Emirates",-0- 
 58285,89573,-0- ,"Dubai","United Arab Emirates",-0- 
+58286,89578,"14112 Sokak Door: 47, Seyhan Daghkioghlu Mah.","Adana","Turkey",-0- 
 58287,89576,-0- ,"Tblisi","Georgia",-0- 
 58288,89579,"22B 21A Bartycka 00-716","Warsaw","Poland",-0- 
 58290,89582,-0- ,"Havana","Cuba",-0- 
@@ -24935,4 +24944,50 @@
 58298,89598,-0- ,-0- ,"Cuba",-0- 
 58299,89600,-0- ,"Moscow","Russia",-0- 
 58300,89602,-0- ,"Beijing","China",-0- 
+58301,89605,-0- ,-0- ,"United Arab Emirates",-0- 
+58301,89607,-0- ,-0- ,"Turkey",-0- 
+58303,89610,-0- ,-0- ,"Turkey",-0- 
+58305,89615,-0- ,-0- ,"Turkey",-0- 
+58306,89617,"Oksuzler Sokak 10 2, Fatih Iskenderpasha Mah.","Istanbul","Turkey",-0- 
+58307,89619,"Kangal Sokak 6 4, Fatih Yavuz Sultan Selim Mah.","Istanbul","Turkey",-0- 
+58308,89621,"Merkez Mah. Deste Sokak 18 8, Kagithane","Istanbul","Turkey",-0- 
+58309,89623,"Genclik Sokak 5 2, Bahchelievler Fevzichakmak Mah.","Istanbul","Turkey",-0- 
+58345,89690,-0- ,-0- ,"Ecuador",-0- 
+58353,89707,-0- ,-0- ,-0- ,-0- 
+58354,89708,-0- ,-0- ,-0- ,-0- 
+58355,89709,-0- ,-0- ,-0- ,-0- 
+58356,89710,-0- ,-0- ,-0- ,-0- 
+58357,89711,-0- ,-0- ,-0- ,-0- 
+58358,89712,-0- ,-0- ,-0- ,-0- 
+58363,89723,-0- ,-0- ,-0- ,-0- 
+58364,89725,-0- ,"Manabi","Ecuador",-0- 
+58366,89730,-0- ,-0- ,"Ecuador",-0- 
+58367,89729,-0- ,-0- ,-0- ,-0- 
+58369,89733,-0- ,"Manabi","Ecuador",-0- 
+58370,89734,-0- ,-0- ,-0- ,-0- 
+58371,89735,-0- ,-0- ,-0- ,-0- 
+58372,89737,-0- ,"Manabi","Ecuador",-0- 
+58373,89739,-0- ,-0- ,"Ecuador",-0- 
+58375,89742,-0- ,"Manabi","Ecuador",-0- 
+58377,89745,-0- ,"Manabi","Ecuador",-0- 
+58378,89747,-0- ,"Manabi","Ecuador",-0- 
+58379,89808,-0- ,"Manabi","Ecuador",-0- 
+58380,89750,-0- ,"Manabi","Ecuador",-0- 
+58381,89752,-0- ,"Manabi","Ecuador",-0- 
+58382,89810,-0- ,"Manabi","Ecuador",-0- 
+58383,89755,-0- ,"Manabi","Ecuador",-0- 
+58410,89819,-0- ,-0- ,"Netherlands",-0- 
+58411,89821,-0- ,-0- ,"Netherlands",-0- 
+58443,89892,-0- ,"Havana","Cuba",-0- 
+58444,89894,-0- ,"Havana","Cuba",-0- 
+58445,89896,-0- ,"Havana","Cuba",-0- 
+58446,89898,-0- ,"Havana","Cuba",-0- 
+58447,89900,-0- ,"Moa, Holguin","Cuba",-0- 
+58448,89902,-0- ,"Havana","Cuba",-0- 
+58449,89904,-0- ,"Havana","Cuba",-0- 
+58450,89906,-0- ,"Havana","Cuba",-0- 
+58451,89908,"Marianao","Havana","Cuba",-0- 
+58452,89910,-0- ,"Miramar","Cuba",-0- 
+58453,89912,-0- ,"Havana","Cuba",-0- 
+58454,89914,-0- ,"Santiago de Cuba","Cuba",-0- 
 
