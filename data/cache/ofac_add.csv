@@ -1608,7 +1608,7 @@
 9898,12866,-0- ,-0- ,-0- ,-0- 
 9932,12948,-0- ,-0- ,-0- ,-0- 
 9935,12956,-0- ,-0- ,-0- ,-0- 
-9936,12958,"Kaya WFG (Jombi) Mensing 14, P.O. Box 3895","Willemstad, Curacao","Netherlands Antilles",-0- 
+9936,12958,"Kaya WFG (Jombi) Mensing 14, P.O. Box 3895","Willemstad","Curacao",-0- 
 9936,12959,"5ta. Ave. No. 6407 esq. a 66, Miramar, Municipio Playa","La Habana","Cuba",-0- 
 9949,12992,-0- ,"Beirut","Lebanon",-0- 
 9964,13018,-0- ,-0- ,"Lebanon",-0- 
@@ -2812,7 +2812,6 @@
 11500,17141,-0- ,"Valencia, Carabobo","Venezuela",-0- 
 11500,17142,-0- ,"Puerto Cabello, Carabobo","Venezuela",-0- 
 11500,17143,-0- ,"Maracaibo, Zulia","Venezuela",-0- 
-11500,17144,-0- ,"Curacao","Netherlands Antilles",-0- 
 11501,17145,-0- ,"Amalfi, Antioquia","Colombia",-0- 
 11502,17149,-0- ,-0- ,"Afghanistan",-0- 
 11502,17150,-0- ,-0- ,"Pakistan",-0- 
@@ -24370,7 +24369,7 @@
 57465,88087,"9 Donggang Rd, Building 9 Room 2302, Huangdao","Qingdao, Shandong 266520","China",-0- 
 57466,88089,-0- ,"London","United Kingdom",-0- 
 57467,88090,-0- ,-0- ,-0- ,-0- 
-57468,88092,"Level 18, V Heun Building, 138 Queen's Road","Hong Kong","Region: China",-0- 
+57468,88092,"Level 18, V Heun Building, 138 Queen's Road","Hong Kong","China",-0- 
 57487,88121,-0- ,"Port Sudan","Sudan",-0- 
 57488,88123,"Unit 12, No. 139, Pasargad Commercial Complex, Mirdamad Blvd","Tehran","Iran",-0- 
 57489,88125,-0- ,-0- ,"Iran",-0- 
@@ -24568,6 +24567,8 @@
 57817,88680,-0- ,-0- ,"Brazil",-0- 
 57833,88695,"Units 2004-2005A, 20/F, K11 Atelier, No. 18 Salisbury Road, Tsim Sha Tsui","Hong Kong","China",-0- 
 57833,88976,-0- ,-0- ,"Virgin Islands, British",-0- 
+57834,88692,-0- ,-0- ,"Iraq",-0- 
+57835,88694,-0- ,-0- ,"Iraq",-0- 
 57837,88702,"Units 2004-2005A, 20/F, K11 Atelier, No. 18 Salisbury Road, Tsim Sha Tsui","Hong Kong","China",-0- 
 57838,88704,-0- ,-0- ,"Singapore",-0- 
 57839,88706,"Unit 2004, 20/F, K11 Atelier, No. 18 Salisbury Road, Tsim Sha Tsui","Hong Kong","China",-0- 
@@ -24629,6 +24630,8 @@
 57893,88815,-0- ,"Tehran","Iran",-0- 
 57894,88812,-0- ,-0- ,-0- ,-0- 
 57895,88817,-0- ,-0- ,"Cuba",-0- 
+57896,88819,-0- ,-0- ,"Iraq",-0- 
+57897,88821,-0- ,-0- ,"Iraq",-0- 
 57898,88823,"Independence Avenue, Sierra Maestra Building, Plaza of the Revolution Municipality","Havana","Cuba",-0- 
 57899,88825,-0- ,-0- ,"Cuba",-0- 
 57900,88827,-0- ,"Madrid","Spain",-0- 
@@ -24643,6 +24646,11 @@
 57906,88839,"Calle 13 #504 e/ D y E, Vedado","Havana","Cuba",-0- 
 57913,88854,-0- ,-0- ,"Iran",-0- 
 57914,88856,"Rm 1526, Unit 1, 15/F, Wah Wan Ind. Building, No. 2 Kin Fat Lane, Tuen Mun","Hong Kong","China",-0- 
+57915,88858,"PO Box 81033, Al Riqa Street, 3","Dubai","United Arab Emirates",-0- 
+57915,88860,"69, Al Rigga Rd, Al Muraqqabat, Deira","Dubai","United Arab Emirates",-0- 
+57915,88862,"Exhibition No 3, Al Muraqqabat, Deira","Dubai","United Arab Emirates",-0- 
+57916,88864,-0- ,"Dubai","United Arab Emirates",-0- 
+57917,88866,-0- ,"Dubai","United Arab Emirates",-0- 
 57918,88868,-0- ,"Tehran","Iran",-0- 
 57921,88874,"Avenida Salvador Allende No. 666, Entre Oquendo y Soledad","Havana 10300","Cuba",-0- 
 57922,88876,-0- ,-0- ,"Sudan",-0- 
@@ -24706,6 +24714,8 @@
 58002,89009,-0- ,"Tlaquepaque, Jalisco","Mexico",-0- 
 58003,89011,-0- ,"Guadalajara, Jalisco","Mexico",-0- 
 58004,89013,-0- ,"Guadalajara, Jalisco","Mexico",-0- 
+58005,89015,-0- ,-0- ,"Ecuador",-0- 
+58005,89480,-0- ,-0- ,"Peru",-0- 
 58013,89071,-0- ,"Jalisco","Mexico",-0- 
 58014,89073,-0- ,-0- ,"Mexico",-0- 
 58015,89075,-0- ,-0- ,"Mexico",-0- 
@@ -24992,8 +25002,13 @@
 58358,89712,-0- ,-0- ,-0- ,-0- 
 58359,89714,"Arcoris Soho A2-6-10, Arcoris 10, Jalan Kiara, Mont Kiara","Wilayah Persekutuan 50480","Malaysia",-0- 
 58360,89716,"Rm 728, 7/F, Liven Hse, 61-63 King Yip St, Kwun Tong, Kowloon","Hong Kong","China",-0- 
+58361,89718,-0- ,-0- ,"Burma",-0- 
+58361,89719,-0- ,-0- ,"Thailand",-0- 
+58361,89720,-0- ,-0- ,"Laos",-0- 
+58362,89722,"Prince International Plaza Building No. 616, Russia Federation Boulevard, Phum Se Pe Se","Phnom Penh","Cambodia",-0- 
 58363,89723,-0- ,-0- ,-0- ,-0- 
 58364,89725,-0- ,"Manabi","Ecuador",-0- 
+58365,89727,-0- ,-0- ,"Singapore",-0- 
 58366,89730,-0- ,-0- ,"Ecuador",-0- 
 58367,89729,-0- ,-0- ,-0- ,-0- 
 58369,89733,-0- ,"Manabi","Ecuador",-0- 
@@ -25079,7 +25094,69 @@
 58489,89986,-0- ,"Havana","Cuba",-0- 
 58490,89988,"Plaza de la Revolucion","Havana","Cuba",-0- 
 58491,89990,-0- ,-0- ,"Cuba",-0- 
+58492,89993,"Nuri Demirag Caddesi No 49, Yenikoy Mahallesi","Turkoba, Istanbul 34277","Turkey",-0- 
+58494,89995,"No. 8, Corner of Yas Alley, Shahid Nafisi Boulevard, Ekbatan, Shahrak","Tehran","Iran",-0- 
+58494,89996,"Armin Building, Uphill from Negin Park, Golpark Square, North Tavanir Street","Tabriz","Iran",-0- 
+58495,89999,-0- ,"Tehran","Iran",-0- 
+58495,90000,-0- ,"Mashhad","Iran",-0- 
+58495,90001,-0- ,"Tabriz","Iran",-0- 
+58496,90002,"9-7 Level 7, Jalan USJ 9/5Q, Subang Business Centre","Subang Jaya, Selangor 47620","Malaysia",-0- 
+58496,90003,"Lot 202-3, 2nd Floor, Customer Services Centre, Klas Cargo Complex, Kuala Lumpur International Airport","Kampung Kota Klias, Selangor 64000","Malaysia",-0- 
+58497,90005,"Ground Floor, No. 0, Airport Road, Amir Sarlashghar Shahid Hossein Lashgari Highway, Airport, Central District","Tehran, Tehran 1387833731","Iran",-0- 
+58498,90007,"Shahid Nafisi Boulevard, No. 11, Shahrak, Ekbatan Phase 1","Tehran","Iran",-0- 
+58498,90008,"Unit 1, First Floor, No. 11, Abdolrahman Nafisi Street, Second Alley, Bimeh","Tehran 1393784181","Iran",-0- 
+58499,90010,"128, Kv. 1, Ulitsa Makataeva","Almaty, Almaty","Kazakhstan",-0- 
+58500,90012,"Hera Clup A Blok K:3, Ozdemir Sokak No:45-46, Ataturk Mahallesi","Esenyurt, Istanbul 34522","Turkey",-0- 
+58505,90047,-0- ,"Sharjah","United Arab Emirates",-0- 
+58508,90026,-0- ,"Sari","Iran",-0- 
+58508,90027,-0- ,"Tehran","Iran",-0- 
+58509,90029,-0- ,"Shiraz","Iran",-0- 
+58510,90033,"Kish Air Central Building, First Floor, Ekbatan Town, Phase I, Shahid Nafisi Boulevard","Tehran 1393853113","Iran",-0- 
+58510,90034,-0- ,"Kish Island, Hormozgan","Iran",-0- 
+58511,90036,-0- ,"Mashhad","Iran",-0- 
+58511,90037,-0- ,"Kish","Iran",-0- 
+58511,90038,-0- ,"Tehran","Iran",-0- 
+58512,90035,"Shahid Lashkari Highway Bypass, Meraj Building, Azadi Square, Special Road, Shahid Filasfi","Tehran","Iran",-0- 
+58513,90040,-0- ,"Tehran","Iran",-0- 
+58514,90042,-0- ,"Tehran","Iran",-0- 
+58515,90044,-0- ,"Kish","Iran",-0- 
+58516,90049,-0- ,"Shiraz","Iran",-0- 
+58516,90050,"No. 71, Corner of Shahid Khadem Alley, Nafisi Blvd, Ekbatan","Tehran","Iran",-0- 
+58517,90048,"No. 12 Riahi Avenue, Shahid Lashkari Highway","Tehran 1245659878","Iran",-0- 
+58518,90052,-0- ,"Tehran","Iran",-0- 
+58519,90055,-0- ,"Tehran","Iran",-0- 
+58520,90057,-0- ,"Izmir, Izmir","Turkey",-0- 
+58521,90059,"115 London Road, Morden","London SM4 5HP","United Kingdom",-0- 
+58522,90073,-0- ,-0- ,"United Arab Emirates",-0- 
+58523,90062,"No. 1, Zagros Airlines Building, Third Alley, Riahi St, Karaj Special Road","Tehran 1391713415","Iran",-0- 
+58523,90063,-0- ,"Abadan","Iran",-0- 
+58524,90065,-0- ,"Dubai","United Arab Emirates",-0- 
+58525,90127,-0- ,"Baalbek-Hermel Province","Lebanon",-0- 
+58526,90068,-0- ,"Tehran","Iran",-0- 
+58529,90075,"Tis Complex Booth 214, Vahdat Street, North Vahdt Street, Azad Zone Neighborhood","Chabahar 9971766162","Iran",-0- 
+58530,90077,-0- ,-0- ,"Iran",-0- 
+58531,90079,"Shahid Sattari Expressway, Flypersia Building No. 2, South Parvaneh Street, West Ferdows Boulevard","Tehran","Iran",-0- 
+58532,90081,-0- ,"Tehran","Iran",-0- 
+58532,90082,-0- ,"Isfahan","Iran",-0- 
+58533,90084,-0- ,-0- ,"Iran",-0- 
+58534,90086,-0- ,"Tehran","Iran",-0- 
+58535,90088,-0- ,"Esfahan","Iran",-0- 
+58537,90091,"Meraj Education Center Building, Azadi Square, Karaj Special Road, Corner of Philosophical Street","Tehran 557111397","Iran",-0- 
+58538,90093,-0- ,"Tehran","Iran",-0- 
 58544,90111,"N:127 B-17 Esentepe Mahallesi, Buyukdere Caddesi, Sisli","Istanbul 34394","Turkey",-0- 
 58545,90117,"Astoria Blok IC Kapi No 17, N: 127 B-17 Esentepe Mahallesi, Buyukdere Caddesi, Sisli","Istanbul","Turkey",-0- 
 58548,90119,"Astoria D:21, N: 127A Esentepe Mahallesi, Buyukdere Caddesi, Sisli","Istanbul","Turkey",-0- 
+58552,90129,-0- ,"Shamstar, Baalbek and Hermel","Lebanon",-0- 
+58553,90131,-0- ,-0- ,"Lebanon",-0- 
+58554,90133,"Airport Road Karim Bldg. 7th Floor, Ghobeiry","Baabda","Lebanon",-0- 
+58555,90135,-0- ,"Shtaura, Bekaa","Lebanon",-0- 
+58555,90136,-0- ,"Zahle","Lebanon",-0- 
+58556,90138,"Zaher El Din Property, Downtown Port","Beirut","Lebanon",-0- 
+58557,90140,-0- ,-0- ,"Turkey",-0- 
+58557,90141,-0- ,-0- ,"Syria",-0- 
+58558,90143,-0- ,-0- ,"Iraq",-0- 
+58559,90145,-0- ,-0- ,"Iraq",-0- 
+58560,90147,-0- ,"Baghdad","Iraq",-0- 
+58561,90149,-0- ,"Baghdad","Iraq",-0- 
+58562,90151,-0- ,-0- ,"Iraq",-0- 
 
