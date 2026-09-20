@@ -2233,8 +2233,6 @@
 10755,15268,"Ksty Industrial Zone, 211400 Vitebskaya oblast","Polotsk","Belarus",-0- 
 10755,15269,"ul. Stroitelnaya","Polotsk, 211412","Belarus",-0- 
 10755,15270,"Promuzel Ksty","Polotsk 211400","Belarus",-0- 
-10756,15272,"71 Ignatova Street, Grodnenskaya Region","Lida 231300","Belarus",-0- 
-10756,15273,"ul. Ignatova, 71, Grodnenskaya oblast","Lida 231300","Belarus",-0- 
 10761,15282,-0- ,-0- ,"Somalia",-0- 
 10762,15284,"Prospect Dzerzhinskogo, 73","Minsk 220116","Belarus",-0- 
 10762,15285,"73 Derzhinskiy Ave.","Minsk 220116","Belarus",-0- 
@@ -2346,9 +2344,6 @@
 10936,15831,-0- ,-0- ,-0- ,-0- 
 10937,15832,-0- ,-0- ,-0- ,-0- 
 10975,15897,"P.O. Box 16785-195","Tehran","Iran",-0- 
-10982,16003,"c/o AGRICOLA GAXIOLA S.A. DE C.V.","Hermosillo, Sonora","Mexico",-0- 
-10982,16004,"c/o INMUEBLES SIERRA VISTA S.A. DE C.V.","Hermosillo, Sonora","Mexico",-0- 
-10982,16005,"c/o TEMPLE DEL PITIC S.A. DE C.V.","Hermosillo, Sonora","Mexico",-0- 
 10983,16002,-0- ,-0- ,"Mexico",-0- 
 10984,16001,-0- ,-0- ,"Mexico",-0- 
 10985,16000,-0- ,-0- ,"Mexico",-0- 
@@ -5274,6 +5269,7 @@
 17013,74656,"The Taj Mahal Hotel, Lobby Mezzanine Floor 1, Mansingh Road","New Delhi 110001","India",-0- 
 17013,74657,"1266 Nanjing Xilu Street, Jingan District","Shanghai 200040","China",-0- 
 17013,74658,"18 BC, CITIC Building, 19 Jianguomenwai Dajie","Beijing 100004","China",-0- 
+17013,90120,-0- ,"Tehran","Iran",-0- 
 17015,25805,"Akademik Sakharov Ave 9","Moscow 107996","Russia",-0- 
 17015,52521,"Pr-kt, Akademika Sakharova, D. 9","Moscow 107078","Russia",-0- 
 17015,74649,"20A, CITIC Building, 19, Joanguomenwai Dajie","Beijing 100004","China",-0- 
@@ -11556,7 +11552,6 @@
 33411,50185,"Nezavisimosti ave. 115","Minsk 220114","Belarus",-0- 
 33411,50186,"6 Volgogradskaya St.","Minsk 220012","Belarus",-0- 
 33431,50728,"Karadordeva 6","Cuprija 35230","Serbia",-0- 
-33451,50222,-0- ,-0- ,"Eritrea",-0- 
 33452,50224,"Avenida Barreda #2318, Res. Quintas del Rey","Mexicali, Baja California","Mexico",-0- 
 33452,57674,"Avenida Dinamarca S/N, Col. Orizaba","Mexicali, Baja California","Mexico",-0- 
 33453,51997,"Avenida Dinamarca S/N, Col. Orizaba","Mexicali, Baja California","Mexico",-0- 
@@ -11571,8 +11566,6 @@
 33498,50467,-0- ,"Nabi Aylah, Zahleh, Bekaa","Lebanon",-0- 
 33500,50298,"France Street Pavilion Building, Villa Jihad el Arab, Downtown Mina el Hosn","Beirut","Lebanon",-0- 
 33513,50304,"ul. M. Bogdanovicha, d. 124, kv. 68","Minsk","Belarus",-0- 
-33534,50326,-0- ,"Asmara","Eritrea",-0- 
-33535,50328,-0- ,-0- ,"Eritrea",-0- 
 33536,51175,"Thukhuma Road, Datkhina Thiri Tsp","Naypyitaw Division","Burma",-0- 
 33537,51173,"Ministry of Defense, Shwedagon Pagoda Road","Rangoon","Burma",-0- 
 33538,51174,-0- ,-0- ,"Burma",-0- 
@@ -11582,7 +11575,6 @@
 33594,50372,"No. 1106, 11 Hemmat Corner, Hemmat Square, Hemmat Boulevard, Shokuhieh Industrial Town","Qom, Qom Province 3718116354","Iran",-0- 
 33595,50376,-0- ,-0- ,"Iran",-0- 
 33596,50375,-0- ,-0- ,"Iran",-0- 
-33597,50384,-0- ,-0- ,"Eritrea",-0- 
 33613,50792,-0- ,"Jinotega","Nicaragua",-0- 
 33614,50793,-0- ,"Esteli","Nicaragua",-0- 
 33616,50393,"Residencial Monte Cielo, Casa #C 152","Managua","Nicaragua",-0- 
@@ -11786,9 +11778,6 @@
 33914,50787,-0- ,-0- ,"Cambodia",-0- 
 33916,50795,"Evagora Pallikaridi, 11","Argaka, Paphos 8873","Cyprus",-0- 
 33917,50796,-0- ,-0- ,-0- ,-0- 
-33918,50798,"Felket Street","Asmara","Eritrea",-0- 
-33918,50799,-0- ,"Dubai","United Arab Emirates",-0- 
-33919,50801,"Felket Street","Asmara","Eritrea",-0- 
 33920,51225,-0- ,-0- ,"Serbia",-0- 
 33920,51226,"Lola Ribar Street, number 58/7","Mitrovica","Kosovo",-0- 
 33921,51207,"Kralj Peter St.","Mitrovica","Kosovo",-0- 
@@ -14877,7 +14866,6 @@
 40946,61116,"Baarerstrasse 55","Zug 6302","Switzerland",-0- 
 40946,61117,"11 Bahnhofstrasse","Schlieren, Zurich 8952","Switzerland",-0- 
 40947,61119,"Schoenenstrasse","Rueschlikon 8803","Switzerland",-0- 
-40948,61121,-0- ,"La Zubia","Spain",-0- 
 40949,61125,-0- ,-0- ,"Russia",-0- 
 40950,61127,"P1-ELOB Office No. E-44G-29, Hamriyah Free Zone Authority","Sharjah","United Arab Emirates",-0- 
 40951,61129,"Office No. 3, Hamarain Centre, Deira, Al Muraqqabat, PO Box 95426","Dubai","United Arab Emirates",-0- 
@@ -17227,7 +17215,6 @@
 46474,69127,"Colonia Las Hojarascas, Km 19.5 Carretera Interamericana","Mixco","Guatemala",-0- 
 46475,69821,-0- ,"Port-au-Prince","Haiti",-0- 
 46476,69915,-0- ,"Port-au-Prince","Haiti",-0- 
-46477,69129,"GSP, K. Marx Street, 16","Minsk 220030","Belarus",-0- 
 46478,69132,"Mulyavina Boulevard 6","Minsk 220005","Belarus",-0- 
 46478,69133,"D. 28, Nezhiloe pomeshchenie, ul. Kuzmy Minina","Minsk 220014","Belarus",-0- 
 46479,69135,-0- ,"Dubai","United Arab Emirates",-0- 
@@ -20752,7 +20739,6 @@
 51037,77539,"Pr-kt Zelenyi D. 20, Pomeshch. 29N/9","Moscow 111397","Russia",-0- 
 51039,77542,-0- ,-0- ,-0- ,-0- 
 51040,77543,-0- ,-0- ,-0- ,-0- 
-51041,77545,"1CA Blok, 1575. Sokak No. 1 CA/2, Akcaburgaz Mahallesi","Esenyurt 34522","Turkey",-0- 
 51043,77647,"Kaafat Atwi Building","Baabda","Lebanon",-0- 
 51044,77550,"Trust Company Complex, Ajeltake Road","Majuro, Ajeltake Island 96960","Marshall Islands",-0- 
 51046,77554,-0- ,"Panama City","Panama",-0- 
@@ -25159,4 +25145,21 @@
 58560,90147,-0- ,"Baghdad","Iraq",-0- 
 58561,90149,-0- ,"Baghdad","Iraq",-0- 
 58562,90151,-0- ,-0- ,"Iraq",-0- 
+58614,90238,-0- ,"Moa, Holguin","Cuba",-0- 
+58615,90240,-0- ,"Moa, Holguin","Cuba",-0- 
+58616,90242,-0- ,"Moa, Holguin","Cuba",-0- 
+58617,90244,-0- ,"Nicaro, Holguin","Cuba",-0- 
+58618,90246,"No. 2, 35th Street, Alvand Street, Argentina Square","Tehran","Iran",-0- 
+58619,90279,"No. 2, 35th Street, Alvand Street, Argentina Square","Tehran","Iran",-0- 
+58620,90249,"Kish Sadaf Fazyek Kh Hananeh Shiday Yakom","Kish Island","Iran",-0- 
+58630,90276,"Unit 7, Building 20, Esmail, Zarafshan Southern, Veranda East, Town West","Tehran","Iran",-0- 
+58631,90278,"KH Shari'ati KH Va'zi P40 Vahda 3","Tehran","Iran",-0- 
+58647,90326,"Loma S/N, Entre Santa Ana Y Conill, Nuevo Vedado, Plaza De La Revolucion","Havana","Cuba",-0- 
+58648,90328,"58 #2906 Eyrpto, Playa","Havana","Cuba",-0- 
+58649,90330,"Estrada Palma No. 13, Casablanca, Regla","Havana","Cuba",-0- 
+58650,90332,-0- ,-0- ,"Cuba",-0- 
+58650,90339,"Calle 186 No 311531 Y 33, Playa","Havana","Cuba",-0- 
+58651,90334,"Circunvalacion Norte, Km 8 ?","Camaguey","Cuba",-0- 
+58652,90336,-0- ,-0- ,"Cuba",-0- 
+58653,90338,"Santa Ana S/N, Entre 47 Y Reforma, Nuevo Vedado, Plaza De La Revolucion","Havana","Cuba",-0- 
 
