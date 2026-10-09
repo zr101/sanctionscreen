@@ -21,3 +21,10 @@ data/embeddings.db
 
 # OS
 .DS_Store
+
+# Local credentials and service state
+.env*
+.runtime/
+data/review-demo.db*
+data/hosted-review.db*
+.streamlit/secrets.toml

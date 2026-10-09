@@ -4,7 +4,11 @@ services:
       context: .
       target: api
     ports:
-      - "8000:8000"
+      - "127.0.0.1:8000:8000"
+    environment:
+      SANCTIONSCREEN_ASSISTANT__PROVIDER: ${SANCTIONSCREEN_ASSISTANT__PROVIDER:-mock}
+      SANCTIONSCREEN_ASSISTANT__MODEL: ${SANCTIONSCREEN_ASSISTANT__MODEL:-}
+      SANCTIONSCREEN_ASSISTANT__API_KEY: ${SANCTIONSCREEN_ASSISTANT__API_KEY:-}
     volumes:
       # Persists audit trail and refreshed lists across restarts; seeded from
       # the image's baked data/ on first run.
@@ -16,7 +20,7 @@ services:
       context: .
       target: ui
     ports:
-      - "8501:8501"
+      - "127.0.0.1:8501:8501"
     environment:
       SANCTIONSCREEN_API_URL: http://api:8000
     depends_on:

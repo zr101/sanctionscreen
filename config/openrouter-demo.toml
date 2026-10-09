@@ -1,0 +1,16 @@
+# Local portfolio demo: fictional fixtures, genuine model-selected tool calls.
+# Credential belongs in ignored .env.local, never in this file.
+[database]
+path = "data/review-demo.db"
+
+[embedding]
+enabled = false
+
+[assistant]
+provider = "openrouter"
+model = "nvidia/nemotron-3-super-120b-a12b:free"
+max_model_calls = 8
+max_tool_calls = 10
+timeout_seconds = 90.0
+max_tokens_per_call = 2048
+max_total_tokens = 48000

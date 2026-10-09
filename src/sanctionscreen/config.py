@@ -11,8 +11,9 @@ from __future__ import annotations
 import os
 from functools import lru_cache
 from pathlib import Path
+from typing import Literal
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field, SecretStr
 from pydantic_settings import (
     BaseSettings,
     PydanticBaseSettingsSource,
@@ -81,6 +82,22 @@ class EmbeddingConfig(BaseModel):
     precompute_on_startup: bool = True
 
 
+class AssistantConfig(BaseModel):
+    # "mock" is the offline, scripted demo model. A live provider must name its
+    # model explicitly; there is no default model and no fallback (DECISIONS.md D13).
+    provider: Literal["mock", "ollama", "groq", "openrouter"] = "mock"
+    model: str = ""
+    ollama_url: str = "http://localhost:11434"
+    ollama_think: bool = False
+    ollama_context: int = Field(default=8192, ge=2048, le=32768)
+    api_key: SecretStr = SecretStr("")
+    max_model_calls: int = Field(default=8, ge=1, le=20)
+    max_tool_calls: int = Field(default=10, ge=1, le=40)
+    timeout_seconds: float = Field(default=90.0, ge=0, le=600)
+    max_tokens_per_call: int = Field(default=1024, ge=1, le=8192)
+    max_total_tokens: int = Field(default=24000, ge=1, le=100000)
+
+
 def _config_file() -> Path | None:
     env = os.environ.get("SANCTIONSCREEN_CONFIG")
     if env:
@@ -96,6 +113,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         env_prefix="SANCTIONSCREEN_",
         env_nested_delimiter="__",
+        env_file=".env.local",
         extra="ignore",
     )
 
@@ -104,6 +122,7 @@ class Settings(BaseSettings):
     normalisation: NormalisationConfig = NormalisationConfig()
     scoring: ScoringConfig = ScoringConfig()
     embedding: EmbeddingConfig = EmbeddingConfig()
+    assistant: AssistantConfig = AssistantConfig()
 
     @classmethod
     def settings_customise_sources(
@@ -114,7 +133,7 @@ class Settings(BaseSettings):
         dotenv_settings: PydanticBaseSettingsSource,
         file_secret_settings: PydanticBaseSettingsSource,
     ) -> tuple[PydanticBaseSettingsSource, ...]:
-        sources: list[PydanticBaseSettingsSource] = [init_settings, env_settings]
+        sources: list[PydanticBaseSettingsSource] = [init_settings, env_settings, dotenv_settings]
         toml_file = _config_file()
         if toml_file is not None:
             sources.append(TomlConfigSettingsSource(settings_cls, toml_file=toml_file))

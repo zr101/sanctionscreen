@@ -1,0 +1,3 @@
+# Community Cloud checks this directory before the repo-root uv.lock.
+# Its working directory is the repository root; share the pinned demo dependencies.
+-r ../requirements.txt

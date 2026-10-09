@@ -67,3 +67,24 @@ model = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 vectors_path = "data/embeddings.db"
 # Recompute missing vectors when the API starts (first run / fresh container).
 precompute_on_startup = true
+
+[assistant]
+# Review assistant (src/sanctionscreen/review). "mock" is an offline scripted
+# model for demos and tests — its output is labelled MOCK everywhere. Live
+# providers are ollama, groq (account must stay on the free plan), or openrouter
+# (an explicit :free model only). Put API keys in ignored .env.local, e.g.
+# SANCTIONSCREEN_ASSISTANT__API_KEY=... . Never add them to a TOML file.
+# For a local model set provider = "ollama" AND an explicit model, e.g.
+#   SANCTIONSCREEN_ASSISTANT__PROVIDER=ollama SANCTIONSCREEN_ASSISTANT__MODEL=qwen2.5:7b
+# The model is never guessed and never silently swapped (DECISIONS.md D13).
+provider = "mock"
+model = ""
+ollama_url = "http://localhost:11434"
+ollama_think = false
+ollama_context = 8192
+# Hard bounds per review run.
+max_model_calls = 8
+max_tool_calls = 10
+timeout_seconds = 90.0
+max_tokens_per_call = 1024
+max_total_tokens = 24000

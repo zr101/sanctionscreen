@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import logging
 import sqlite3
+import threading
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
@@ -25,6 +26,7 @@ from sanctionscreen.matching.embedding import (
     precompute_embeddings,
 )
 from sanctionscreen.matching.engine import MatchingEngine
+from sanctionscreen.review.models import build_model
 
 logger = logging.getLogger(__name__)
 
@@ -44,6 +46,8 @@ substitute for a commercial screening product.
 
 def create_app(settings: Settings | None = None) -> FastAPI:
     settings = settings or get_settings()
+    # Fail fast on an incomplete live-model config instead of guessing a model.
+    review_model = build_model(settings.assistant)
 
     @asynccontextmanager
     async def lifespan(app: FastAPI):
@@ -82,6 +86,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             return connect(settings.database.path)
 
         app.state.audit_conn_factory = audit_conn_factory
+        app.state.review_model = review_model
+        app.state.assistant_config = settings.assistant
+        app.state.review_slots = threading.BoundedSemaphore(1)
         yield
 
     app = FastAPI(

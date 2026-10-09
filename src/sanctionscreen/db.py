@@ -7,6 +7,7 @@ data/embeddings.db (DECISIONS.md D6) so this file stays small in git.
 
 from __future__ import annotations
 
+import json
 import sqlite3
 from pathlib import Path
 
@@ -70,6 +71,18 @@ CREATE TABLE IF NOT EXISTS screenings (
     results_json          TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_screenings_created ON screenings(created_at);
+
+CREATE TABLE IF NOT EXISTS review_cases (
+    case_id       TEXT PRIMARY KEY,
+    created_at    TEXT NOT NULL DEFAULT (datetime('now')),
+    query_name    TEXT NOT NULL,
+    status        TEXT NOT NULL,
+    provider      TEXT NOT NULL,
+    model         TEXT NOT NULL,
+    is_mock       INTEGER NOT NULL,
+    screening_ids TEXT NOT NULL,
+    result_json   TEXT NOT NULL
+);
 """
 
 
@@ -84,3 +97,33 @@ def connect(path: str | Path) -> sqlite3.Connection:
     conn.execute("PRAGMA foreign_keys = ON")
     conn.executescript(DDL)
     return conn
+
+
+def fetch_entity_detail(
+    conn: sqlite3.Connection, source_list: str, reference_number: str
+) -> dict | None:
+    """Full source record for one listed entity, or None when absent."""
+    row = conn.execute(
+        "SELECT * FROM entities WHERE source_list = ? AND reference_number = ?",
+        (source_list.upper(), reference_number),
+    ).fetchone()
+    if row is None:
+        return None
+    names = conn.execute(
+        "SELECT name_type, alias_quality, name_original FROM names"
+        " WHERE entity_id = ? ORDER BY name_type != 'primary', name_original",
+        (row["id"],),
+    ).fetchall()
+    return {
+        "source_list": row["source_list"],
+        "reference_number": row["reference_number"],
+        "primary_name": row["primary_name"],
+        "entity_type": row["entity_type"],
+        "nationality": row["nationality"],
+        "date_of_birth": row["date_of_birth"],
+        "listed_date": row["listed_date"],
+        "first_seen_at": row["first_seen_at"],
+        "last_updated_at": row["last_updated_at"],
+        "names": [dict(n) for n in names],
+        "raw_record": json.loads(row["raw_record"]),
+    }

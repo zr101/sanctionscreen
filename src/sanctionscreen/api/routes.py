@@ -17,8 +17,12 @@ from sanctionscreen.api.schemas import (
     ScreenRequest,
     ScreenResponse,
 )
+from sanctionscreen.db import fetch_entity_detail
 from sanctionscreen.matching.engine import MatchingEngine, MatchResult
 from sanctionscreen.normalise import normalise_name
+from sanctionscreen.review import store
+from sanctionscreen.review.agent import ReviewAgent
+from sanctionscreen.review.schemas import ReviewRequest, ReviewResult
 
 router = APIRouter()
 
@@ -153,31 +157,75 @@ def lists(request: Request) -> list[ListInfo]:
 def entity_detail(request: Request, source_list: str, reference_number: str) -> dict:
     conn = request.app.state.audit_conn_factory()
     try:
-        row = conn.execute(
-            "SELECT * FROM entities WHERE source_list = ? AND reference_number = ?",
-            (source_list.upper(), reference_number),
-        ).fetchone()
-        if row is None:
-            raise HTTPException(status_code=404, detail="entity not found")
-        names = conn.execute(
-            "SELECT name_type, alias_quality, name_original FROM names"
-            " WHERE entity_id = ? ORDER BY name_type != 'primary', name_original",
-            (row["id"],),
-        ).fetchall()
+        detail = fetch_entity_detail(conn, source_list, reference_number)
     finally:
         conn.close()
-    import json as _json
+    if detail is None:
+        raise HTTPException(status_code=404, detail="entity not found")
+    return detail
 
+
+@router.post(
+    "/review",
+    response_model=ReviewResult,
+    summary="Draft a screening review case with the tool-using assistant",
+    description="The configured model chooses among four narrow tools (screen_name, "
+    "get_record, request_information, draft_case) within hard limits on calls, tokens "
+    "and time. The result is a source-cited draft that is always pending human review, "
+    "or a request for more customer details, plus the full tool trace. Results from "
+    "the offline mock model are flagged is_mock=true.",
+)
+def review(request: Request, body: ReviewRequest) -> ReviewResult:
+    if not normalise_name(body.name):
+        raise HTTPException(
+            status_code=422,
+            detail="name contains no matchable characters after normalisation",
+        )
+    agent = ReviewAgent(
+        request.app.state.engine,
+        request.app.state.audit_conn_factory,
+        request.app.state.review_model,
+        request.app.state.assistant_config,
+    )
+    slots = request.app.state.review_slots
+    if not slots.acquire(blocking=False):
+        raise HTTPException(
+            status_code=429,
+            detail="a review is already running; retry shortly",
+            headers={"Retry-After": "2"},
+        )
+    try:
+        return agent.run(body)
+    finally:
+        slots.release()
+
+
+@router.get("/assistant", summary="Configured review model and execution bounds")
+def assistant_settings(request: Request) -> dict:
+    model = request.app.state.review_model
+    config = request.app.state.assistant_config
     return {
-        "source_list": row["source_list"],
-        "reference_number": row["reference_number"],
-        "primary_name": row["primary_name"],
-        "entity_type": row["entity_type"],
-        "nationality": row["nationality"],
-        "date_of_birth": row["date_of_birth"],
-        "listed_date": row["listed_date"],
-        "first_seen_at": row["first_seen_at"],
-        "last_updated_at": row["last_updated_at"],
-        "names": [dict(n) for n in names],
-        "raw_record": _json.loads(row["raw_record"]),
+        "provider": model.provider,
+        "model": model.model,
+        "is_mock": model.is_mock,
+        "max_model_calls": config.max_model_calls,
+        "max_tool_calls": config.max_tool_calls,
+        "timeout_seconds": config.timeout_seconds,
+        "max_total_tokens": config.max_total_tokens,
     }
+
+
+@router.get(
+    "/review/{case_id}",
+    response_model=ReviewResult,
+    summary="A stored review case, including its tool trace",
+)
+def review_case(request: Request, case_id: str) -> ReviewResult:
+    conn = request.app.state.audit_conn_factory()
+    try:
+        result = store.get_case(conn, case_id)
+    finally:
+        conn.close()
+    if result is None:
+        raise HTTPException(status_code=404, detail="review case not found")
+    return result

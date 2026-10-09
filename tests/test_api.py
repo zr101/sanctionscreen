@@ -43,6 +43,19 @@ def api(tmp_path_factory):
 
 
 class TestScreen:
+    def test_review_busy_keeps_screening_available(self, api):
+        client, _ = api
+        slot = client.app.state.review_slots
+        assert slot.acquire(blocking=False)
+        try:
+            response = client.post("/review", json={"name": "Ivan Testov"})
+            assert response.status_code == 429
+            assert response.headers["Retry-After"] == "2"
+            assert client.post("/screen", json={"name": "Ivan Testov"}).status_code == 200
+        finally:
+            slot.release()
+        assert client.post("/review", json={"name": "Ivan Testov"}).status_code == 200
+
     def test_exact_match(self, api):
         client, _ = api
         response = client.post("/screen", json={"name": "Testov, Ivan Petrovich"})
@@ -153,3 +166,46 @@ class TestHealthAndLists:
         screen_doc = spec["paths"]["/screen"]["post"]
         assert "audit" in screen_doc["description"]
         assert spec["info"]["title"] == "SanctionScreen"
+
+
+class TestReview:
+    def test_review_round_trip_is_labelled_mock_and_persisted(self, api):
+        client, db_path = api
+        response = client.post(
+            "/review",
+            json={"name": "Ivan Petrovich Testov", "date_of_birth": "1965-02-15"},
+        )
+        assert response.status_code == 200
+        body = response.json()
+        assert body["is_mock"] is True
+        assert body["provider"] == "mock"
+        assert body["status"] == "drafted"
+        assert body["draft"]["status"] == "pending_human_review"
+        assert body["draft"]["candidates"][0]["record_id"] == "OFAC:12345"
+        assert [e["kind"] for e in body["trace"]][-1] == "stop"
+
+        stored = client.get(f"/review/{body['case_id']}")
+        assert stored.status_code == 200
+        assert stored.json() == body
+        conn = connect(db_path)
+        audit_rows = conn.execute(
+            "SELECT COUNT(*) FROM screenings WHERE screening_id = ?",
+            (body["screening_ids"][0],),
+        ).fetchone()[0]
+        conn.close()
+        assert audit_rows == 1
+
+    def test_review_validation(self, api):
+        client, _ = api
+        assert client.post("/review", json={"name": "  ... "}).status_code == 422
+        assert (
+            client.post("/review", json={"name": "x", "disposition": "cleared"}).status_code == 422
+        )
+        assert client.get("/review/does-not-exist").status_code == 404
+
+    def test_live_provider_without_model_fails_fast(self):
+        settings = Settings()
+        settings.assistant.provider = "ollama"
+        settings.assistant.model = ""
+        with pytest.raises(ValueError, match="must be set explicitly"):
+            create_app(settings)

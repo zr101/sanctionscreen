@@ -29,6 +29,12 @@ program a match falls under.
 type *Vladimr Putin*, *Lavrov Sergei* or *Владимир Путин* and expand a
 match to see the layer-by-layer scoring.
 
+The same app also has a **[Review assistant](https://sanctionscreens.streamlit.app/?workspace=review)**
+workspace: try fictional customer `Ivan Petrovich Testov`, DOB `1965-02-15`,
+nationality `Russia`. It drafts cited evidence for human review using an explicit
+free OpenRouter model. An offline mock is available as a separately selected,
+clearly labelled mode. [Hosted setup](demo/README.md).
+
 The interesting part of that check is not the lookup — it's the names.
 
 ## The problem: names don't match themselves
@@ -178,12 +184,70 @@ uv run pytest                                          # tests
 | `GET /health` | Service status, embedding-layer state, per-list refresh timestamps. |
 | `GET /lists` | Entity/name counts and last refresh for each loaded list. |
 | `GET /entity/{list}/{ref}` | Full raw source record for one listed entity (analyst drill-down). |
+| `POST /review` | Review assistant: drafts a source-cited case that is always pending human review, or asks for missing details. Returns the draft, the tool trace and usage. Body: `{name, date_of_birth?, nationality?, entity_type?, analyst_note?}`. |
+| `GET /review/{case_id}` | A stored review case with its tool trace. |
+| `GET /assistant` | Configured provider, model and execution bounds; credentials are excluded. |
 
 Every `/screen` call is persisted to the `screenings` audit table
 (screening id, timestamp, query, parameters, match count, top score, full
 result JSON) — reconstructable screening decisions are a regulatory
 expectation for reporting entities. Full schemas live in the OpenAPI docs at
 `/docs`.
+
+## Review assistant
+
+A tool-using assistant drafts the analyst's review case from a screening
+result. The **model chooses** which tool to call: `screen_name`, `get_record`,
+`request_information` or `draft_case`. The facts come from deterministic code:
+- engine scores (unchanged);
+- DOB, nationality and type comparisons that return match, conflict or unknown;
+- a validator that rejects drafts that leave out a candidate, quote values not
+  in the record, hide a conflict or use disposition wording ("cleared", "same
+  person", …).
+
+The draft has no disposition field and is always `pending_human_review`. Runs
+are capped on model calls, tool calls, tokens and time, and every run is
+persisted with its full tool trace (`review_cases` table, Streamlit page *Review
+assistant*).
+
+```bash
+uv run python -m sanctionscreen.review.demo        # offline MOCK model, fictional data
+uv run python eval/review_eval.py                  # writes eval/review_results.md
+```
+
+The default model is an offline **mock** (a scripted policy, not an LLM), and
+everything it produces is labelled as such. Live providers are OpenRouter,
+Ollama and Groq; a model must be named explicitly. OpenRouter accepts only
+specific `:free` IDs, with zero-price routing and fallbacks disabled. Nothing
+is substituted when unavailable.
+
+The verified local portfolio runtime uses fictional data and a real free
+OpenRouter model:
+
+```bash
+# Save SANCTIONSCREEN_ASSISTANT__API_KEY=your-key in ignored .env.local; chmod 600 .env.local
+uv sync --extra ui
+.venv/bin/python scripts/local_service.py install   # macOS: start at login, restart after crashes
+.venv/bin/python scripts/local_service.py status
+.venv/bin/python scripts/check_local.py --live      # UI → API → LLM tools → SQLite → UI
+```
+
+Open [the review UI](http://127.0.0.1:8501/Review_assistant) and try
+`Ivan Petrovich Testov`, DOB `1965-02-15`, nationality `Russia`, or
+`Abdul Rahim Testman` without details. Configuration is explicit in
+[`config/openrouter-demo.toml`](config/openrouter-demo.toml). The separate
+fictional database preserves the original list data. Setup, free-provider
+limits and stop/restart commands: [docs/free-runtime.md](docs/free-runtime.md).
+
+The local Ollama client is also available:
+
+```bash
+SANCTIONSCREEN_ASSISTANT__PROVIDER=ollama SANCTIONSCREEN_ASSISTANT__MODEL=qwen2.5:7b \
+  uv run uvicorn sanctionscreen.api.main:app
+```
+
+The design, guardrails, test matrix, measured live and mock results and limitations are
+in the case study: [docs/review-assistant.md](docs/review-assistant.md).
 
 ## List sources & refresh
 
@@ -224,9 +288,11 @@ the threshold and accept more review workload.
 - **SQLite** for everything — lists, ingestion log, audit trail — so the
   whole service state is one committable artifact. Embedding vectors live in
   a separate regenerable `data/embeddings.db` to keep the repo slim.
-- **~100 tests** covering normalisation (Unicode, Arabic, empty/long names),
+- **Tests** covering normalisation (Unicode, Arabic, empty/long names),
   each matching layer, score combination, parsers for all three source
-  formats, idempotent re-ingestion, and the API surface via TestClient.
+  formats, idempotent re-ingestion, the API surface via TestClient, and the
+  review assistant (comparators, tools, draft validator, budgets, tool
+  failures, prompt injection, human-review bypass) — all offline.
 - **CI** (`ci.yml`): ruff + format check + mypy + pytest on every push.
 - **Docker**: multi-stage; the API image bakes the HF model *and*
   precomputed vectors so containers start instantly and run fully offline

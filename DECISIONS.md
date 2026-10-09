@@ -72,3 +72,92 @@ Refinement of D6: at image build time the HF model is downloaded and all name
 vectors precomputed, so containers start in seconds and run fully offline
 (`HF_HUB_OFFLINE=1`). `--build-arg WITH_EMBEDDINGS=0` produces a lite image
 (layers 1–3 only) at roughly a tenth of the size.
+
+## D12 — Review assistant: narrow tools, deterministic validator, no disposition field
+The assistant's model chooses among four tools (`screen_name`, `get_record`,
+`request_information`, `draft_case`). It cannot run arbitrary queries, can open
+only the records it has just screened, and cannot record a decision. Facts come
+from code:
+- engine scores, unchanged;
+- DOB, nationality and type verdicts from `review/compare.py`;
+- record fields quoted verbatim.
+
+`draft_case` is validated deterministically (grounding, coverage of every
+screened candidate, comparator agreement, disposition and identity wording)
+and returns the problems so the model can retry. The draft schema has no
+disposition field and its status is fixed to `pending_human_review`.
+Alternative: rely on the system prompt — rejected, because a prompt is
+advice, not a control, and injected text in a record or a note can override
+it.
+
+## D13 — Explicit live provider and model, no fallback
+`assistant.provider` defaults to the labelled offline mock. Live choices are
+Ollama, OpenRouter and Groq, using the existing `httpx` dependency. A live model
+must be named explicitly. OpenRouter accepts only specific `:free` catalog IDs,
+sets zero prompt/completion price ceilings, requires tool parameters to be supported,
+and disables provider fallbacks. Groq requires an account on its free plan; the
+application cannot control Groq's account billing tier. The runnable local demo
+uses OpenRouter's `nvidia/nemotron-3-super-120b-a12b:free`.
+
+Unreachable or missing models return `model_unavailable`. A quota error returns
+`rate_limited` with a retry delay, and the provider remains in cooldown until that
+delay expires. Nothing switches to another model, the mock, or a paid variant.
+Credentials belong in environment variables or the ignored, permission-restricted
+`.env.local`, and are excluded from results and provider error messages.
+
+## D14 — Mock model output is labelled everywhere
+`MockReviewModel` is a deterministic policy that reacts to tool results; it
+is not an LLM. `is_mock` is part of every `ReviewResult`, every
+`review_cases` row, the demo banner, the UI banner and the eval report
+header. Measured results produced by the mock are presented as checks of the
+harness and guardrails, not of model quality.
+
+## D15 — Local login services and separate fictional demo state
+The portfolio runtime uses `data/review-demo.db`, built from fictional source-format
+fixtures. It preserves the original list database and matching defaults. macOS
+launchd starts API/UI at login and restarts them after process exits. Both bind
+to loopback. Reinstalling identical job definitions uses `kickstart -k`, avoiding
+the unload/re-register race observed during verification. Docker Compose remains
+an alternative local runtime and forwards explicit model configuration.
+
+## D16 — Bound resources before execution, validate decisions at tool boundaries
+One review runs at a time per API process; a busy request gets HTTP 429 while
+ordinary screening remains available. Model requests have an absolute timeout
+across connection, writing and reading. Before another model request, the loop
+reserves a conservative UTF-8-byte token bound for the transcript and tool schemas,
+plus the output allowance. It checks time and token usage again before tools.
+
+Information requests cannot bypass failed record retrieval. When comparable
+identifiers exist, the assistant drafts the available evidence and lists remaining
+details in the draft. Multiple candidates with only name evidence require an
+information request. The model still chooses and supplies every tool call; the
+loop never constructs a substitute draft.
+
+The screening tool also refuses to replace the analyst's customer name or invent
+an entity-type filter. Numeric evidence scores must equal the engine result and
+cite the exact scored name, preventing alias scores being assigned to primary
+names. Information requests and drafts both reject disposition wording, including
+claims that no further screening is required.
+
+## D17 — Measure live quality separately from mocks and validator coverage
+The evaluation records the provider, exact model ID, dataset, date, command,
+limits, task outcomes, failed requests, tool errors, rejections and usage. JSON
+artifacts preserve live drafts and traces. A passing validator is not proof that
+arbitrary free-text statements are factual: prose requires human source review.
+Incomplete live runs return a failing command exit code rather than a green demo.
+
+## D18 — Keep the existing hosted demo URL and run reviews in its process
+The public Streamlit Community Cloud app starts `demo/app.py`, independently of
+local API/UI services. Its Review assistant workspace calls the same bounded
+`ReviewAgent` directly, using a separate fictional SQLite database and the
+explicit free OpenRouter profile. The ordinary official-list screening workspace
+retains its existing engine. Cloud credentials come from Streamlit Secrets or
+environment variables; missing credentials disable live submission without a
+fallback. A shared runtime retains provider cooldown and admits one review at a
+time. A default allowance of 25 live runs per UTC day limits public-demo use.
+
+Cases can be downloaded with their traces because free cloud disk state is not
+durable across hosting-instance replacement. `demo/requirements.txt` takes
+precedence over the root development lockfile on Community Cloud and includes
+the pinned demo requirements. The package is installed from the checked-out
+revision, avoiding a separate cached GitHub package that can lag behind the UI.
