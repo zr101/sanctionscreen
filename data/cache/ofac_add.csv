@@ -10753,7 +10753,6 @@
 31004,46883,"Avenida Lopez Mateos Sur 4000, Fraccionamiento San Martin del Tajo, Interior Calle Camino del Azteca 121","Tlajomulco de Zuniga, Jalisco","Mexico",-0- 
 31004,46884,"Calle Coral 2623, Fraccionamiento Residencial Victoria","Guadalajara, Jalisco","Mexico",-0- 
 31005,46887,-0- ,"Guasave, Sinaloa","Mexico",-0- 
-31042,50992,"901-7, No. 439 Yishan Road, Xuhui District","Shanghai","China",-0- 
 31082,46943,-0- ,-0- ,"Mexico",-0- 
 31122,47003,-0- ,"Moscow","Russia",-0- 
 31123,47006,-0- ,"Moscow","Russia",-0- 
@@ -11130,7 +11129,6 @@
 32691,49224,"3 Kommunarov St.","Gomel","Belarus",-0- 
 32692,49227,"ul. Zavodskaya, d. 1K, pom. 1, gp. Bolbasovo","Orsha district, Vitebsk oblast 211004","Belarus",-0- 
 32696,49235,"Lyn'kova Street, 43-51","Minsk 220124","Belarus",-0- 
-32711,49265,-0- ,"Minsk","Belarus",-0- 
 32712,49267,-0- ,-0- ,"Belarus",-0- 
 32713,49269,-0- ,-0- ,"Belarus",-0- 
 32714,49271,"Frunze St., bldg. 19","Minsk 220034","Belarus",-0- 
@@ -11590,9 +11588,6 @@
 34022,50994,-0- ,"Pyongyang","Korea, North",-0- 
 34022,50995,-0- ,-0- ,"China",-0- 
 34023,50997,"No. 19, E. First Road, Huilong Boulevard, Yongchuan District","Chongqing","China",-0- 
-34024,50999,"Room 810, No. 760, Qinzhou Road, Xuhui District","Shanghai","China",-0- 
-34024,51000,-0- ,"Guangzhou, Guangdong","China",-0- 
-34025,51002,"Room 705, Floor 7, Building 1, No. 1919 Zhongshan West Road, Xuhui District","Shanghai","China",-0- 
 34036,52984,"Presnenskaya nab., D. 8, Structure 1, MFK Capital City, South Tower, 7, 8th Floor","Moscow 123112","Russia",-0- 
 34056,51044,"57/63, Line Wall Road","Gibraltar GX11 1AA","Gibraltar",-0- 
 34057,51046,"67 Boulevard Du 30 Juin, Immeuble Golf, 5eme etage, Municipality of Gombe","Kinshasa","Congo, Democratic Republic of the",-0- 
@@ -25085,6 +25080,9 @@
 58788,90607,"Room D10 9/F, Camelpaint Building Block 2, 62 Hoi Yuen Road, Kwun Tong, Kowloon","Hong Kong","China",-0- 
 58789,90609,"Beheshti Street, No. 69, Niroo Motor Building","Tehran","Iran",-0- 
 58790,90611,"3rd Floor, No. 127, Khaled Islambouli Street, Shahid Masoud Ahmadian Street, Argentina-Saei","Tehran 1513833115","Iran",-0- 
+58810,90658,"Office 412, Parcel 243-210, Al Qusais Industrial Second, Deira","Dubai","United Arab Emirates",-0- 
+58810,90743,"405 Al Mansour Building, Damascus Road, Al Qusais","Dubai","United Arab Emirates",-0- 
+58811,90660,"2 Leng Kee Road, #02-10, Thye Hong Centre","Singapore 159086","Singapore",-0- 
 58812,90661,-0- ,-0- ,-0- ,-0- 
 58813,90663,"Trust Company Complex, Ajeltake Road","Ajeltake Island, Majuro 96960","Marshall Islands",-0- 
 58814,90665,"Trust Company Complex, Ajeltake Road","Ajeltake Island, Majuro 96960","Marshall Islands",-0- 
@@ -25104,7 +25102,13 @@
 58831,90694,-0- ,-0- ,-0- ,-0- 
 58832,90695,-0- ,-0- ,-0- ,-0- 
 58834,90697,-0- ,-0- ,-0- ,-0- 
+58873,90744,-0- ,-0- ,-0- ,-0- 
+58874,90745,-0- ,-0- ,-0- ,-0- 
 58930,90839,-0- ,-0- ,"Iran",-0- 
+58931,90818,-0- ,-0- ,"Panama",-0- 
+58931,90819,"5th Floor, 90 Iroon Politechneiou Avenue","Piraeus 185 36","Greece",-0- 
+58932,90821,"Global Plaza Building, Calle 50, Floor 21","Panama City","Panama",-0- 
+58932,90822,"158 II Merachias and Alkiviadou","Piraeus 185 35","Greece",-0- 
 58934,90825,"Rm 9042, 9/F, Block B, Chung Mei Centre, 15-17 Hong Yip Street, Kwun Tong","Hong Kong","China",-0- 
 58934,90826,"Unit 11, 9/F, The Cloud, No. 111 Tuang Chau Street, Tai Koktsui, Kowloon","Hong Kong","China",-0- 
 58935,90828,"Unit 2078, Ground Floor, Atta, Ferdowsi Qeshm Commercial Complex Passage, No. 0, Vali Asr Boulevard, Main Street, Sina Desert, Central District","Qeshm, Hormozgan 7951919639","Iran",-0- 
@@ -25128,6 +25132,18 @@
 58953,90866,"Ground Floor, NBO-9, No. 0, Andisheh Boulevard, Sanai Boulevard, Bank Complex, Kish District, Bandar-e Lengeh County","Kish, Hormozgan 7941773662","Iran",-0- 
 58953,90867,-0- ,"Kish, Hormozgan","Iran",-0- 
 58954,90869,"Unit 173, Second Floor, Booth 303, Salehyar Complex, No. 0, Vahdat Street, Imam Khomeini Boulevard, Free Zone Neighborhood, Central District, Chabahar Country","Chabahar City, Sistan and Baluchestan Province 9971768361","Iran",-0- 
+58955,90870,-0- ,-0- ,-0- ,-0- 
+58956,90871,-0- ,-0- ,-0- ,-0- 
+58957,90872,-0- ,-0- ,-0- ,-0- 
+58958,90874,-0- ,"Panama City","Panama",-0- 
+58959,90876,-0- ,-0- ,"Panama",-0- 
+58960,90878,-0- ,"Panama City","Panama",-0- 
+58961,90880,-0- ,"Panama City","Panama",-0- 
+58962,90882,-0- ,"Panama City","Panama",-0- 
+58963,90883,-0- ,-0- ,-0- ,-0- 
+58964,90884,-0- ,-0- ,-0- ,-0- 
+58965,90885,-0- ,-0- ,-0- ,-0- 
+58966,90886,-0- ,-0- ,-0- ,-0- 
 58990,90894,-0- ,-0- ,"Iran",-0- 
 58990,90895,-0- ,"Dubai","United Arab Emirates",-0- 
 58991,90897,"Unit 208, Second Floor, Plot EX20, Sepehr Building, Eghtesad Square, Iran Boulevard, Kish Industrial Phase 2","Kish, Hormozgan 7941658112","Iran",-0- 
