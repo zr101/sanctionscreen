@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://scsanctions.un.org/sc-sanctions.xsd" dateGenerated="2026-11-08T00:00:00.869Z">
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://scsanctions.un.org/sc-sanctions.xsd" dateGenerated="2026-11-15T00:00:03.738Z">
   <INDIVIDUALS>
     <INDIVIDUAL>
       <DATAID>6907993</DATAID>
@@ -45598,7 +45598,7 @@ from eastern DRC. Uganda Commercial Impex (UCI) Ltd last filed a return in 2013 
       <SORT_KEY_LAST_MOD/>
     </ENTITY>
     <ENTITY>
-      <DATAID>6909619</DATAID>
+      <DATAID>6909743</DATAID>
       <VERSIONNUM>1</VERSIONNUM>
       <FIRST_NAME>ALLIANCE FLEUVE CONGO (AFC) </FIRST_NAME>
       <UN_LIST_TYPE>DRC</UN_LIST_TYPE>
@@ -45610,9 +45610,12 @@ from eastern DRC. Uganda Commercial Impex (UCI) Ltd last filed a return in 2013 
       <LIST_TYPE>
         <VALUE>UN List</VALUE>
       </LIST_TYPE>
+      <LAST_DAY_UPDATED>
+        <VALUE>2026-11-11</VALUE>
+      </LAST_DAY_UPDATED>
       <ENTITY_ALIAS>
-        <QUALITY/>
-        <ALIAS_NAME/>
+        <QUALITY>a.k.a.</QUALITY>
+        <ALIAS_NAME>Front pour la Refondation de la Nation (FRN)</ALIAS_NAME>
       </ENTITY_ALIAS>
       <ENTITY_ADDRESS>
         <STATE_PROVINCE>Eastern</STATE_PROVINCE>
@@ -49841,7 +49844,7 @@ industries and support to that country’s military-related sales.</COMMENTS1>
       <UN_LIST_TYPE>DPRK</UN_LIST_TYPE>
       <REFERENCE_NUMBER>KPe.050</REFERENCE_NUMBER>
       <LISTED_ON>2017-08-05</LISTED_ON>
-      <COMMENTS1>Mansudae Overseas Project Group of Companies engaged in, facilitated, or was responsible for the exportation of workers from the DPRK to other nations for construction-related activities including for statues and monuments to generate revenue for the Government of the DPRK or the Workers’ Party of Korea. The Mansudae Overseas Project Group of Companies has been reported to conduct business in countries in Africa and Southeast Asia including Algeria, Angola, Botswana, Benin, Cambodia, Chad, the Democratic Republic of the Congo, Equatorial Guinea, Malaysia, Mozambique, Madagascar, Namibia, Syria, Togo, and Zimbabwe.</COMMENTS1>
+      <COMMENTS1>Mansudae Overseas Project Group of Companies engaged in, facilitated, or was responsible for the exportation of workers from the DPRK to other nations for construction-related activities including for statues and monuments to generate revenue for the Government of the DPRK or the Workers’ Party of Korea. The Mansudae Overseas Project Group of Companies has been reported to conduct business in countries in Africa and Southeast Asia including Angola, Botswana, Benin, Cambodia, Chad, the Democratic Republic of the Congo, Equatorial Guinea, Malaysia, Mozambique, Madagascar, Namibia, Syria, Togo, and Zimbabwe.</COMMENTS1>
       <HAS_INTERPOL_LINK>NO</HAS_INTERPOL_LINK>
       <INTERPOL_LINK/>
       <LIST_TYPE>
@@ -49849,6 +49852,7 @@ industries and support to that country’s military-related sales.</COMMENTS1>
       </LIST_TYPE>
       <LAST_DAY_UPDATED>
         <VALUE>2022-07-26</VALUE>
+        <VALUE>2026-11-13</VALUE>
       </LAST_DAY_UPDATED>
       <ENTITY_ALIAS>
         <QUALITY>a.k.a.</QUALITY>
